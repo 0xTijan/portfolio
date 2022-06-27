@@ -13,7 +13,7 @@ const Skills = () => {
           return(
             <div>
               <div className="skill">
-                <img src={skill.img} />
+                <img src={skill.img} alt="Skill logo image" />
               </div>
               <p>{skill.name}</p>
             </div>

@@ -1,9 +1,10 @@
 :root {
   --dark-bg: #101320;
+  --light-bg: white;
+  --grey-bg: #333643;
   --text-white: white;
   --text-dark: #0f111b;
-  --text-secpndary: #15c0f0;
-  --light-bg: white;
+  --text-secondary: #15c0f0;
 }
 
 .heading {

@@ -6,19 +6,6 @@ import avatar from "./../../images/hi.png";
 import "./About.css";
 
 const About = () => {
-
-  const getColor = () => {
-    let ele = document.querySelector(':root');
-    let color = "blue";
-    let cs;
-    if(ele) {
-      cs = getComputedStyle(ele);
-      color = cs.getPropertyValue('--text-secpndary');
-    }
-    console.log(color);
-    return color;     
-  }
-
   return(
     <div className="bg">
       <div className="about-wrapper">
@@ -31,7 +18,7 @@ const About = () => {
               I'm <span className="name">Tijan</span>
             </Heading>
           </div>
-          <Text fontSize='3xl'>BLOCKCHAIN DEVELOPER</Text>
+          <Text fontSize='3xl'>14 y/o <span className="name">blockchain developer</span></Text>
 
           <div className="icons">
             <a href="https://github.com/0xTijan" target="_blank">
@@ -50,7 +37,7 @@ const About = () => {
           </Button>
         </div>
         <div className="about-avatar">
-          <img src={avatar} className="avatar" />
+          <img src={avatar} className="avatar" alt="Tijan Bitmoji" />
         </div>
       </div>
       <div className="bottom-icon">

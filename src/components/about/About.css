@@ -17,7 +17,7 @@
 }
 
 .name {
-  color: var(--text-secpndary);
+  color: var(--text-secondary);
   font-weight: 800;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .icon:hover{
-  color: var(--text-secpndary);
+  color: var(--text-secondary);
   transform: scale(1.25);
   transition-duration: 0.2s;
 }
@@ -47,7 +47,7 @@
   background-color: white;
   border-radius: 50%;
   padding: 1rem;
-  box-shadow: 80px 30px  var(--text-secpndary);
+  box-shadow: 80px 30px  var(--text-secondary);
   transition-duration: 0.25s;
 }
 

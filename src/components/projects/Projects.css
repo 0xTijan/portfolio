@@ -1,0 +1,49 @@
+@import url("./../../App.css");
+
+.bg-projects {
+  background-color: var(--dark-bg);
+  height: fit-content;
+  color: var(--text-white);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 7vh;
+  gap: 3rem;
+}
+
+.project {
+  background-color: var(--grey-bg);
+  border-radius: 1rem;
+  width: 19vw;
+  transition-duration: 0.3s;
+}
+
+.project:hover {
+  transform: translate(0, -1rem);
+  transition-duration: 0.3s;
+}
+
+.project img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-tags {
+  margin-top: 2vh;
+  margin-bottom: 2.5vh;
+}
+
+.soon {
+  margin-top: 7vh;
+  text-align: center;
+}
