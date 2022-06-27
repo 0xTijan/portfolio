@@ -1,0 +1,91 @@
+@import url("./../../App.css");
+
+.bg {
+  background-color: var(--dark-bg);
+  min-height: 100vh;
+  color: var(--text-white);
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about-title {
+  margin-bottom: 4vh;
+}
+
+.name {
+  color: var(--text-secpndary);
+  font-weight: 800;
+}
+
+.icons {
+  font-size: 2.75rem;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: row;
+  transition-duration: 0.4s;
+  margin-top: 3.5vh;
+  margin-bottom: 3.5vh;
+}
+
+.icon {
+  margin-right: 1.75vh;
+  transition-duration: 0.2s;
+}
+
+.icon:hover{
+  color: var(--text-secpndary);
+  transform: scale(1.25);
+  transition-duration: 0.2s;
+}
+
+.avatar {
+  height: 50vh;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 80px 30px  var(--text-secpndary);
+  transition-duration: 0.25s;
+}
+
+.avatar:hover{
+  transform: translate(80px, 30px);
+  box-shadow: none;
+  transition-duration: 0.25s;
+}
+
+.about-avatar {
+  padding-top: 18vh;
+}
+
+.about-text {
+  margin-top: 20vh;
+}
+
+@media only screen and (max-width: 1250px) {
+  .bg {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-avatar {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-left: 10vw;
+  }
+
+  .avatar {
+    height: 35vh;
+    padding: 0.5rem;
+    box-shadow: 50px 20px  var(--text-secpndary);
+  }
+}
