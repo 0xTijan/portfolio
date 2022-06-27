@@ -1,0 +1,45 @@
+@import url("./../../App.css");
+
+.bg-skills {
+  background-color: var(--light-bg);
+  height: fit-content;
+  color: var(--text-dark);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.skill-icons-gird {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 5vh;
+  gap: 3rem;
+}
+
+.skill img {
+  max-height: 7rem;
+  width: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.skill img:hover {
+  box-shadow: none;
+  transform: scale(1.15);
+  transition-duration: 0.4s;
+}
+
+.skill-icons-gird p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2vh;
+}
+

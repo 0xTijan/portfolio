@@ -53,9 +53,9 @@ const About = () => {
           <img src={avatar} className="avatar" />
         </div>
       </div>
-      {/*<div className="bottom-icon">
+      <div className="bottom-icon">
         <BsChevronDown />
-  </div>*/}
+      </div>
     </div>
   )  
 }

@@ -1,5 +1,17 @@
 :root {
   --dark-bg: #101320;
   --text-white: white;
+  --text-dark: #0f111b;
   --text-secpndary: #15c0f0;
+  --light-bg: white;
+}
+
+.heading {
+  font-size: 4.5rem;
+  font-weight: 800;
+} 
+
+.text {
+  font-size: 2.5rem;
+  font-weight: 300;
 }
