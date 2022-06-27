@@ -26,7 +26,7 @@ const Projects = () => {
                   {project.technologies.map((tech: Skill) => {
                     return(
                       <a href={tech.url} target="_blank">
-                        <Tag size='lg' colorScheme='cyan' borderRadius='full'>
+                        <Tag size='lg' colorScheme='cyan' borderRadius='full' className="tech-tag">
                           <Avatar
                             src={tech.img}
                             size='xs'

@@ -1,0 +1,15 @@
+@import url("./../../App.css");
+
+.bg-footer {
+  background-color: var(--dark-bg);
+  height: fit-content;
+  color: var(--text-white);
+  padding-top: 15vh;
+  padding-bottom: 2.5vh;
+}
+
+.footer-text {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+}

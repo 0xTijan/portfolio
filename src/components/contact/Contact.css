@@ -1,0 +1,64 @@
+@import url("./../../App.css");
+
+.bg-contact {
+  background-color: var(--dark-bg);
+  height: fit-content;
+  color: var(--text-white);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 7vh;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.contact-section:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  background-color: var(--grey-bg);
+}
+
+.contact-icon {
+  margin-right: 1.5vw;
+  color: var(--text-secondary);
+  font-size: 7rem;
+}
+
+.contact-title {
+  color: var(--text-secondary);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.contact-details {
+  color: var(--text-white);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.contact-btn {
+  margin-top: 15vh;
+  transform: scale(2);
+  position: absolute;
+  top: 100%;
+  left: 45%;
+}
+
+.button-container {
+  position: relative;
+}
+
+

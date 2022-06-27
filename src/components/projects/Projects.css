@@ -17,6 +17,10 @@
   gap: 3rem;
 }
 
+.tech-tag {
+  margin: 5px;
+}
+
 .project {
   background-color: var(--grey-bg);
   border-radius: 1rem;

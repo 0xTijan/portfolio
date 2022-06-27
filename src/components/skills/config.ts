@@ -11,11 +11,22 @@ import Chainlink from "./../../images/chainlink-logo.png";
 import NPM from "./../../images/npm-logo.png";
 import YARN from "./../../images/yarn-logo.png";
 import Git from "./../../images/git-logo.png";
+import Moralis from "./../../images/moralis-logo.png";
 
 export type Skill = {
   name: string;
   img: any;
   url: string;
+}
+
+export const getSkill = (name: string) => {
+  let toReturn;
+  skills.map((skill: Skill) => {
+    if(skill.name.toLowerCase() == name.toLowerCase()) {
+      toReturn.push(skill);
+    }
+  });
+  return toReturn;
 }
 
 export const skills: Skill[] = [
@@ -68,6 +79,11 @@ export const skills: Skill[] = [
     name: "Chainlink",
     url: "",
     img: Chainlink
+  },
+  {
+    name: "Moralis",
+    url: "",
+    img: Moralis
   },
   {
     name: "NPM",

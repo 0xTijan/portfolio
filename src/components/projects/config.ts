@@ -17,7 +17,7 @@ export const projects: Project[] = [
     image: Avatar,
     url: "",
     github: "",
-    technologies: [skills[2]]
+    technologies: [skills[2], skills[0], skills[5], skills[7], skills[1]]
   },
   {
     name: "Portfolio",

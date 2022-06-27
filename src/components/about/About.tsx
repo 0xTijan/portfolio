@@ -18,7 +18,7 @@ const About = () => {
               I'm <span className="name">Tijan</span>
             </Heading>
           </div>
-          <Text fontSize='3xl'>14 y/o <span className="name">blockchain developer</span></Text>
+          <Text fontSize='3xl'>14 y/o <span className="name">BLOCKCHAIN DEVELOPER</span> passionate about<br/>blockchain and web3 industry, looking forward to learn<br/>something new every day and contribute to the industry!</Text>
 
           <div className="icons">
             <a href="https://github.com/0xTijan" target="_blank">
@@ -40,8 +40,10 @@ const About = () => {
           <img src={avatar} className="avatar" alt="Tijan Bitmoji" />
         </div>
       </div>
-      <div className="bottom-icon">
-        <BsChevronDown />
+      <div className="icon-wrapper">
+        <div className="bottom-icon">
+          <BsChevronDown />
+        </div>
       </div>
     </div>
   )  
