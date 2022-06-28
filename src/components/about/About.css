@@ -6,6 +6,23 @@
   color: var(--text-white);
 }
 
+.alert {
+  position: absolute;
+  background-color: var(--text-secondary);
+  text-align: center;
+  width: 100%;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  right: 5%;
+}
+
 .about-wrapper {
   display: flex;
   flex-direction: row;

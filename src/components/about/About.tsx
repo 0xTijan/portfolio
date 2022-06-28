@@ -1,5 +1,5 @@
-import React from "react";
-import { Heading, Text, Button } from '@chakra-ui/react';
+import React, { useState } from "react";
+import { Heading, Text, Button, CloseButton } from '@chakra-ui/react';
 import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
 import { BsTelegram, BsChevronDown } from "react-icons/bs";
 import { FaDiscord  } from "react-icons/fa";
@@ -9,6 +9,10 @@ import "./About.css";
 
 const About = () => {
   
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+
+  const hide = () => setIsVisible(false);
+
   const getFontSize = () => {
     let width = window.innerWidth;
     if(width < 450) return "5rem";
@@ -16,9 +20,24 @@ const About = () => {
     return "8rem";
   }
 
+  const Alert = () => {
+    if(isVisible) {
+      return(
+        <div className="alert">
+          <Heading as="h3" size="lg">🚧 Website is in the development! 🚧</Heading>
+          <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
+        </div>
+      )
+    }else{
+      return null
+    }
+  }
+
   return(
     <div className="bg">
+
       <div className="about-wrapper">
+        <Alert />
         <div className="about-text">
           <div className="about-title">
             <Heading as='h1' fontSize={getFontSize()} size='4xl'>

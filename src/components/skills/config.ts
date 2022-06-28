@@ -19,13 +19,15 @@ export type Skill = {
   url: string;
 }
 
-export const getSkill = (name: string) => {
+export const getSkill = (names: string[]) => {
   let toReturn: Skill[] = [];
-  skills.map((skill: Skill) => {
-    if(skill.name.toLowerCase() == name.toLowerCase()) {
-      toReturn.push(skill);
-    }
-  });
+  names.map((name: string) => {
+    skills.map((skill: Skill) => {
+      if(skill.name.toLowerCase() === name.toLowerCase()) {
+        toReturn.push(skill);
+      }
+    });
+  })
   return toReturn;
 }
 

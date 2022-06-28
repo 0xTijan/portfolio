@@ -26,6 +26,7 @@
   border-radius: 1rem;
   width: fit-content;
   transition-duration: 0.3s;
+  height: fit-content;
 }
 
 .project:hover {
@@ -40,17 +41,21 @@
 
 .project-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .project-tags {
-  margin-top: 2vh;
-  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
+  margin-bottom: 3vh;
 }
 
 .soon {
   margin-top: 7vh;
   text-align: center;
 }
+
 
 @media only screen and (max-width: 1300px) {
   .projects-grid {
