@@ -20,6 +20,7 @@
     "react-scripts": "5.0.1",
     "swiper": "^8.2.5",
     "typescript": "^4.7.4",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/uuid": "^8.3.4",
     "@types/webpack-env": "^1.17.0"
   }
 }

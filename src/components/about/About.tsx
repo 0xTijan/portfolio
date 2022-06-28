@@ -11,7 +11,6 @@ const About = () => {
   
   const getFontSize = () => {
     let width = window.innerWidth;
-    console.log(width)
     if(width < 450) return "5rem";
     if(width < 1250) return "6rem";
     return "8rem";

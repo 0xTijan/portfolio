@@ -6,8 +6,8 @@ import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-ic
 import { BsTelegram, BsGlobe2 } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaDiscord } from "react-icons/fa";
+import { v4 as uuidv4 } from 'uuid';
 import "./Contact.css";
-
 
 export type Contact = {
   name: string,
@@ -66,7 +66,7 @@ const Contact = () => {
       <div className="contact-grid">
         {contacts.map((contact: Contact) => {
           return(
-            <a href={contact.url} target="_blank">
+            <a key={uuidv4()} href={contact.url} target="_blank">
               <div className="contact-section">
                   {contact.icon}
                   <div className="contact-text-div">

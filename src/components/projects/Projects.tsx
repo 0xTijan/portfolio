@@ -1,9 +1,10 @@
 import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 import { Button, HStack, Heading, Text, Tag, Avatar, TagLabel } from "@chakra-ui/react";
 import { projects, Project } from "./config";
 import { AiFillGithub } from "react-icons/ai"
-import "./Projects.css";
 import { Skill } from "../skills/config";
+import "./Projects.css";
 
 const Projects = () => {
   return(
@@ -13,7 +14,7 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project: Project) => {
           return(
-            <div className="project">
+            <div key={uuidv4()} className="project">
               <img src={project.image} alt="Project Image" />
               <div className="project-info">
                 <Heading as='h4' size='lg'>
@@ -25,7 +26,7 @@ const Projects = () => {
                 <div className="project-tags">
                   {project.technologies.map((tech: Skill) => {
                     return(
-                      <a href={tech.url} target="_blank">
+                      <a key={uuidv4()} href={tech.url} target="_blank">
                         <Tag size='lg' colorScheme='cyan' borderRadius='full' className="tech-tag">
                           <Avatar
                             src={tech.img}

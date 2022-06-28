@@ -69,6 +69,7 @@
   .contact-section {
     padding: .75rem;
     margin-top: 4vh;
+    width: 90vw;
   }
   
   .contact-section:hover {
