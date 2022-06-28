@@ -1,4 +1,4 @@
-import { Skill, skills } from "../skills/config"
+import { getSkill, Skill, skills } from "../skills/config"
 import Avatar from "./../../images/hardhat-logo.png";
 
 export type Project = {
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     image: Avatar,
     url: "",
     github: "",
-    technologies: [skills[2]]
+    technologies: getSkill("javascript")
   },
   {
     name: "Portfolio",

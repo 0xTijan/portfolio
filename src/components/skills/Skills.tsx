@@ -11,12 +11,12 @@ const Skills = () => {
       <div className="skill-icons-gird">
         {skills.map((skill: Skill) => {
           return(
-            <div>
+            <a href={skill.url} target="_blank">
               <div className="skill">
                 <img src={skill.img} alt="Skill logo image" />
               </div>
               <p>{skill.name}</p>
-            </div>
+            </a>
           )
         })}
       </div>

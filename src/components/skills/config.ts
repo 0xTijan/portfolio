@@ -20,7 +20,7 @@ export type Skill = {
 }
 
 export const getSkill = (name: string) => {
-  let toReturn;
+  let toReturn: Skill[] = [];
   skills.map((skill: Skill) => {
     if(skill.name.toLowerCase() == name.toLowerCase()) {
       toReturn.push(skill);
@@ -32,72 +32,72 @@ export const getSkill = (name: string) => {
 export const skills: Skill[] = [
   {
     name: "HTML",
-    url: "",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     img: HTML
   },
   {
     name: "CSS",
-    url: "",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     img: CSS
   },
   {
     name: "JavaScript",
-    url: "",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     img: JS
   },
   {
     name: "TypeScript",
-    url: "",
+    url: "https://www.typescriptlang.org/",
     img: TS
   },
   {
     name: "React",
-    url: "",
+    url: "https://reactjs.org/",
     img: React
   },
   {
     name: "Solidity",
-    url: "",
+    url: "https://soliditylang.org/",
     img: Solidity
   },
   {
     name: "Hardhat",
-    url: "",
+    url: "https://hardhat.org/",
     img: Hardhat
   },
   {
     name: "Truffle",
-    url: "",
+    url: "https://trufflesuite.com/",
     img: Truffle
   },
   {
     name: "Ganache",
-    url: "",
+    url: "https://trufflesuite.com/ganache/",
     img: Ganache
   },
   {
     name: "Chainlink",
-    url: "",
+    url: "https://chain.link/",
     img: Chainlink
   },
   {
     name: "Moralis",
-    url: "",
+    url: "https://moralis.io/",
     img: Moralis
   },
   {
     name: "NPM",
-    url: "",
+    url: "https://www.npmjs.com/",
     img: NPM
   },
   {
     name: "YARN",
-    url: "",
+    url: "https://yarnpkg.com/",
     img: YARN
   },
   {
     name: "Git",
-    url: "",
+    url: "https://git-scm.com/",
     img: Git
   },
 ]

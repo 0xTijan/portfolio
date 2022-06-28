@@ -18,7 +18,7 @@
 }
 
 .skill img {
-  max-height: 7rem;
+  height: 7rem;
   width: 7rem;
   margin-left: auto;
   margin-right: auto;
@@ -43,3 +43,37 @@
   margin-top: 2vh;
 }
 
+@media only screen and (max-width: 950px) {
+  .skill-icons-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5vh;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skill-icons-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5vh;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .skill-icons-gird {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vh;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .skill img {
+    height: 5rem;
+    width: 5rem;
+    padding: 0.75rem;
+  }
+}

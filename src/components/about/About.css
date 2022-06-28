@@ -79,6 +79,12 @@
   position: relative;
 }
 
+.about-text-desc {
+  word-wrap: break-word;
+  width: 50vw;
+}
+
+
 @media only screen and (max-width: 1250px) {
   .bg {
     padding-left: 5vw;
@@ -86,20 +92,43 @@
   }
 
   .about-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-left: auto;
     margin-right: auto;
   }
 
   .about-avatar {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin-left: 10vw;
+    padding-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .avatar {
     height: 35vh;
     padding: 0.5rem;
-    box-shadow: 50px 20px  var(--text-secpndary);
+    box-shadow: 50px 20px var(--text-secondary);
   }
+
+  .about-text {
+    margin-top: 8vh;
+    padding-bottom: 10vh;
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .abc {
+    font-size: 6rem;
+  }
+
+  .about-text-desc {
+    word-wrap: break-word;
+    width: 90vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
