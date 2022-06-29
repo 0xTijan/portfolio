@@ -19,9 +19,9 @@ export type Contact = {
 export const contacts: Contact[] = [
   {
     name: "EMAIL:",
-    info: "tijan.nartnik@gmail.com",
+    info: "contactme@tijan.dev",
     icon: <MdOutlineEmail className="contact-icon" />,
-    url: "mailto:example@website.com?subject=This%20is%20a%20subject",
+    url: "mailto:contactme@tijan.dev",
   },
   {
     name: "TWITTER:",

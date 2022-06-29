@@ -54,6 +54,12 @@ const Projects = () => {
           )
         })}
       </div>
+      <div>
+        <p className="git-hub-text">See more my projects on Github</p>
+        <a href="https://github.com/0xTijan">
+          <button className="git-hub-btn">GitHub</button>
+        </a>
+      </div>
       <p className="text soon"> . . . more coming soon!</p>
     </div>
   )

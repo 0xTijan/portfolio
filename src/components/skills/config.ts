@@ -12,6 +12,7 @@ import NPM from "./../../images/npm-logo.png";
 import YARN from "./../../images/yarn-logo.png";
 import Git from "./../../images/git-logo.png";
 import Moralis from "./../../images/moralis-logo.png";
+import Native from "./../../images/react-native.png";
 
 export type Skill = {
   name: string;
@@ -86,6 +87,11 @@ export const skills: Skill[] = [
     name: "Moralis",
     url: "https://moralis.io/",
     img: Moralis
+  },
+  {
+    name: "React Native",
+    url: "https://reactnative.dev/",
+    img: Native
   },
   {
     name: "NPM",

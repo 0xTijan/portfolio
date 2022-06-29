@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: var(--text-white);
 }
 
 .close-btn {
@@ -146,6 +147,11 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .alert {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
   }
   
 }

@@ -20,11 +20,17 @@ const About = () => {
     return "8rem";
   }
 
+  const getAlertSize = () => {
+    let width = window.innerWidth;
+    if(width < 1275) return "md";
+    return "lg";
+  }
+
   const Alert = () => {
     if(isVisible) {
       return(
         <div className="alert">
-          <Heading as="h3" size="lg">🚧 Website is in the development! 🚧</Heading>
+          <Heading as="h3" size={getAlertSize()}>🚧 Website is in development! 🚧</Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
         </div>
       )
@@ -34,10 +40,10 @@ const About = () => {
   }
 
   return(
+    <>
+    <Alert />
     <div className="bg">
-
       <div className="about-wrapper">
-        <Alert />
         <div className="about-text">
           <div className="about-title">
             <Heading as='h1' fontSize={getFontSize()} size='4xl'>
@@ -66,7 +72,7 @@ const About = () => {
              </a>*/}
           </div>
 
-          <a href="mailto:example@website.com?subject=This%20is%20a%20subject">
+          <a href="mailto:contactme@tijan.dev">
             <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid'>
               Contact Me
             </Button>
@@ -82,6 +88,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   )  
 }
 

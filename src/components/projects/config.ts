@@ -38,12 +38,12 @@ export const projects: Project[] = [
     technologies: [skills[2], skills[0], skills[5], skills[7], skills[1]]
   },
   {
-    name: "Diamond Hands 💎",
+    name: "Diamond Hands",
     description: "Developer portfolio ",
     image: Avatar,
     url: "",
     github: "",
-    technologies: [skills[2]]
+    technologies: getSkill(["react", "solidity", "hardhat", "ganache", "chainlink", "javascript", "npm", "git", "css", "html"])
   },
   {
     name: "Crypto Tracker",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     technologies: [skills[2]]
   },
   {
-    name: "Simple DEX",
+    name: "Mobile Wallet",
     description: "Developer portfolio ",
     image: Avatar,
     url: "",
