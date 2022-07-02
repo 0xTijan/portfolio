@@ -80,7 +80,7 @@ const Contact = () => {
       </div>
 
       <div className="button-container">
-        <a href="mailto:example@website.com?subject=This%20is%20a%20subject">
+        <a href="mailto:contactme@tijan.dev">
           <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid' className="contact-btn">
             Contact Me
           </Button>

@@ -30,7 +30,7 @@ const About = () => {
     if(isVisible) {
       return(
         <div className="alert">
-          <Heading as="h3" size={getAlertSize()}>🚧 Website is in development! 🚧</Heading>
+          <Heading as="h3" size={getAlertSize()}>🚧{"   "}<a href="mailto:contactme@tijan.dev" className="contact-link">Hire Me!</a>{"   "}🚧</Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
         </div>
       )
@@ -67,9 +67,6 @@ const About = () => {
             <a href="https://t.me/TijanWeb3" target="_blank">
               <BsTelegram className="icon" />
             </a>
-            {/*<a href="https://discord.com/users/775249998379614238" target="_blank">
-              <FaDiscord className="icon" />
-             </a>*/}
           </div>
 
           <a href="mailto:contactme@tijan.dev">

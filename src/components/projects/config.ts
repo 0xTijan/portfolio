@@ -2,6 +2,11 @@ import { getSkill, Skill, skills } from "../skills/config"
 import SimpleChat from "./../../images/simple-chat.png";
 import Portfolio from "./../../images/portfolio.png";
 import Avatar from "./../../images/hardhat-logo.png";
+import Crypto from "./../../images/crypto-tracker.png";
+import Diamond from "./../../images/diamond-hands.png";
+import Coin from "./../../images/coin-flip.png";
+import Mobile from "./../../images/wallet.png";
+
 
 export type Project = {
   name: string,
@@ -18,63 +23,47 @@ export const projects: Project[] = [
     description: "My developer portfolio showing my blockchain projects, skillset and certificates",
     image: Portfolio,
     url: "https://tijan.dev/",
-    github: "https://github.com/0xTijan/simple-crypto-chat",
+    github: "https://github.com/0xTijan/portfolio",
     technologies: getSkill(["react", "typescript", "html", "css", "git", "npm"])
   },
   {
     name: "Simple Chat",
     description: "Simple chat groups with limitations on your token balances, built in Moralis 7-day challenge (more on Github).",
     image: SimpleChat,
-    url: "https://simplechat.tijan.dev/",
+    url: "https://projects.tijan.dev/simple-chat",
     github: "https://github.com/0xTijan/simple-crypto-chat",
     technologies: getSkill(["html", "css", "javascript", "moralis"])
   },
   {
     name: "Coin Flip",
-    description: "Developer portfolio ",
-    image: Avatar,
-    url: "",
-    github: "",
-    technologies: [skills[2], skills[0], skills[5], skills[7], skills[1]]
+    description: "Multiplayer Coin Flip game using smart contracts and chainlink VRF to determine a winner in decentralized way.",
+    image: Coin,
+    url: "https://jaw6r7frvcwq.usemoralis.com",
+    github: "https://github.com/0xTijan/coin-flip",
+    technologies: getSkill(["react", "solidity", "hardhat", "typescript", "chainlink", "moralis"])
   },
   {
     name: "Diamond Hands",
-    description: "Developer portfolio ",
-    image: Avatar,
-    url: "",
-    github: "",
-    technologies: getSkill(["react", "solidity", "hardhat", "ganache", "chainlink", "javascript", "npm", "git", "css", "html"])
+    description: "Funny blockchain game that prevents you to panic sell your cryptos no matter what.",
+    image: Diamond,
+    url: "https://kivt14y98mje.usemoralis.com",
+    github: "https://github.com/0xTijan/diamond-hands",
+    technologies: getSkill(["solidity", "hardhat", "react", "javascript", "moralis"])
   },
   {
     name: "Crypto Tracker",
-    description: "Developer portfolio ",
-    image: Avatar,
-    url: "",
-    github: "",
-    technologies: [skills[2]]
-  },
-  {
-    name: "DAO",
-    description: "Developer portfolio ",
-    image: Avatar,
-    url: "",
-    github: "",
-    technologies: [skills[2]]
-  },
-  {
-    name: "Multisig",
-    description: "Developer portfolio ",
-    image: Avatar,
-    url: "",
-    github: "",
-    technologies: [skills[2]]
+    description: "Users can see all statistics about top 250 cryptos and login or signup to track their portfolio.",
+    image: Crypto,
+    url: "https://projects.tijan.dev/crypto-tracker",
+    github: "https://github.com/0xTijan/crypto-tracker",
+    technologies: getSkill(["react", "javascript", "moralis", "css", "html", "git", "npm"])
   },
   {
     name: "Mobile Wallet",
-    description: "Developer portfolio ",
-    image: Avatar,
-    url: "",
-    github: "",
-    technologies: [skills[2]]
+    description: "Shows all users on-chian stats and they can add contacts to easily transfer assets.",
+    image: Mobile,
+    url: "https://github.com/0xTijan/mobile-wallet",
+    github: "https://github.com/0xTijan/mobile-wallet",
+    technologies: getSkill(["react native", "javascript", "moralis", "css", "npm"])
   },
 ]

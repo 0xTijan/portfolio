@@ -51,6 +51,21 @@ const Certificates = () => {
           }}
         >
           <SwiperSlide>
+            <img src={contract2} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={js} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={react} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={link} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={dapp} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
             <img src={block} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
@@ -69,22 +84,7 @@ const Certificates = () => {
             <img src={eth} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={js} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={react} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={link} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={dapp} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src={contract1} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={contract2} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={security} alt="Certificate" className="certificate-img" />

@@ -34,31 +34,6 @@ export const getSkill = (names: string[]) => {
 
 export const skills: Skill[] = [
   {
-    name: "HTML",
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    img: HTML
-  },
-  {
-    name: "CSS",
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    img: CSS
-  },
-  {
-    name: "JavaScript",
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    img: JS
-  },
-  {
-    name: "TypeScript",
-    url: "https://www.typescriptlang.org/",
-    img: TS
-  },
-  {
-    name: "React",
-    url: "https://reactjs.org/",
-    img: React
-  },
-  {
     name: "Solidity",
     url: "https://soliditylang.org/",
     img: Solidity
@@ -84,9 +59,34 @@ export const skills: Skill[] = [
     img: Chainlink
   },
   {
+    name: "JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    img: JS
+  },
+  {
+    name: "TypeScript",
+    url: "https://www.typescriptlang.org/",
+    img: TS
+  },
+  {
+    name: "React",
+    url: "https://reactjs.org/",
+    img: React
+  },
+  {
     name: "Moralis",
     url: "https://moralis.io/",
     img: Moralis
+  },
+  {
+    name: "HTML",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    img: HTML
+  },
+  {
+    name: "CSS",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    img: CSS
   },
   {
     name: "React Native",
