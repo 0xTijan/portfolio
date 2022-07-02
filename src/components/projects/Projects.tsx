@@ -10,7 +10,7 @@ const Projects = () => {
   return(
     <div className="bg-projects">
       <p className="heading">Projects</p>
-      <p className="text">Take a look at my favourite blockchain projects here:</p>
+      <p className="text">Take a look at my blockchain projects:</p>
       <div className="projects-grid">
         {projects.map((project: Project) => {
           return(

@@ -29,7 +29,7 @@ const Certificates = () => {
   return(
     <div className="bg-certificats">
       <p className="heading">Certificates</p>
-      <p className="text">My certificates from one of the biggest blockchain academies Moralis Academy.</p>
+      <p className="text">My certificates from one of the biggest blockchain academies - Moralis Academy.</p>
 
       <div className="slideshow">
         <Swiper

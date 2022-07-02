@@ -20,7 +20,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "Portfolio",
-    description: "My developer portfolio showing my blockchain projects, skillset and certificates",
+    description: "Developer portfolio showing my blockchain projects, skillset and certificates.",
     image: Portfolio,
     url: "https://tijan.dev/",
     github: "https://github.com/0xTijan/portfolio",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   },
   {
     name: "Simple Chat",
-    description: "Simple chat groups with limitations on your token balances, built in Moralis 7-day challenge (more on Github).",
+    description: "Chat groups with limitations based on your token balances, built in Moralis 7-day challenge.",
     image: SimpleChat,
     url: "https://projects.tijan.dev/simple-chat",
     github: "https://github.com/0xTijan/simple-crypto-chat",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   },
   {
     name: "Diamond Hands",
-    description: "Funny blockchain game that prevents you to panic sell your cryptos no matter what.",
+    description: "Funny blockchain game that prevents you to panic sell your cryptos by locking them in smart contract.",
     image: Diamond,
     url: "https://kivt14y98mje.usemoralis.com",
     github: "https://github.com/0xTijan/diamond-hands",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   },
   {
     name: "Crypto Tracker",
-    description: "Users can see all statistics about top 250 cryptos and login or signup to track their portfolio.",
+    description: "Users can see all statistics about top 250 cryptos and create their own personal portfolio.",
     image: Crypto,
     url: "https://projects.tijan.dev/crypto-tracker",
     github: "https://github.com/0xTijan/crypto-tracker",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     name: "Mobile Wallet",
-    description: "Shows all users on-chian stats and they can add contacts to easily transfer assets.",
+    description: "Shows on-chain stats off user's address. User can add personal contacts for easy assets transfer.",
     image: Mobile,
     url: "https://github.com/0xTijan/mobile-wallet",
     github: "https://github.com/0xTijan/mobile-wallet",

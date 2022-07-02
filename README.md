@@ -1,5 +1,5 @@
 # Portfolio Website
-My portfolio website show-casing my skillset, my favourite projects, certificates from one of the biggest blockchain academies - Moralis Academy. 
+My portfolio website show-casing my skillset, favourite projects and certificates from one of the biggest blockchain academies - Moralis Academy. 
 
 Please leave a ⭐ if you like it.
 
