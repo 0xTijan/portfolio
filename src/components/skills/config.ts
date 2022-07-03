@@ -13,6 +13,9 @@ import YARN from "./../../images/yarn-logo.png";
 import Git from "./../../images/git-logo.png";
 import Moralis from "./../../images/moralis-logo.png";
 import Native from "./../../images/react-native.png";
+import Web3 from "./../../images/web3js.png";
+import Ethers from "./../../images/ethers-logo.png";
+
 
 export type Skill = {
   name: string;
@@ -77,6 +80,16 @@ export const skills: Skill[] = [
     name: "Moralis",
     url: "https://moralis.io/",
     img: Moralis
+  },
+  {
+    name: "EthersJS",
+    url: "https://docs.ethers.io/v5/",
+    img: Ethers
+  },
+  {
+    name: "web3js",
+    url: "https://web3js.readthedocs.io/en/v1.7.4/",
+    img: Web3
   },
   {
     name: "HTML",

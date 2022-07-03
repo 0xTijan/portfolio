@@ -60,7 +60,7 @@ const Contact = () => {
     <div className="bg-contact">
       <div className="contact-header">
         <p className="heading">Contacte Me</p>
-        <p className="text">If you have any questions or want to hire me, please contact me</p>
+        <p className="text">If you have any questions or want to hire me, please contact me:</p>
       </div>
 
       <div className="contact-grid">
