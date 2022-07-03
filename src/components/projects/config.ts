@@ -38,7 +38,7 @@ export const projects: Project[] = [
     name: "Coin Flip",
     description: "Multiplayer Coin Flip game using smart contracts and chainlink VRF to determine a winner in decentralized way.",
     image: Coin,
-    url: "https://jaw6r7frvcwq.usemoralis.com",
+    url: "https://projects.tijan.dev/coin-flip",
     github: "https://github.com/0xTijan/coin-flip",
     technologies: getSkill(["react", "solidity", "hardhat", "typescript", "chainlink", "moralis"])
   },
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     name: "Diamond Hands",
     description: "Funny blockchain game that prevents you to panic sell your cryptos by locking them in smart contract.",
     image: Diamond,
-    url: "https://kivt14y98mje.usemoralis.com",
+    url: "https://projects.tijan.dev/diamond-hands",
     github: "https://github.com/0xTijan/diamond-hands",
     technologies: getSkill(["solidity", "hardhat", "react", "javascript", "moralis"])
   },
