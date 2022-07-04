@@ -15,7 +15,7 @@ import Moralis from "./../../images/moralis-logo.png";
 import Native from "./../../images/react-native.png";
 import Web3 from "./../../images/web3js.png";
 import Ethers from "./../../images/ethers-logo.png";
-
+import Waffle from "./../../images/waffle.png";
 
 export type Skill = {
   name: string;
@@ -45,6 +45,11 @@ export const skills: Skill[] = [
     name: "Hardhat",
     url: "https://hardhat.org/",
     img: Hardhat
+  },
+  {
+    name: "Waffle",
+    url: "https://getwaffle.io/",
+    img: Waffle
   },
   {
     name: "Truffle",
