@@ -16,6 +16,10 @@ import Native from "./../../images/react-native.png";
 import Web3 from "./../../images/web3js.png";
 import Ethers from "./../../images/ethers-logo.png";
 import Waffle from "./../../images/waffle.png";
+import Next from "./../../images/nextjs-logo.png";
+import IPFS from "./../../images/ipfs-logo.png";
+import Graph from "./../../images/thegraph-logo.png";
+import Arweave from "./../../images/arweave.png";
 
 export type Skill = {
   name: string;
@@ -82,6 +86,11 @@ export const skills: Skill[] = [
     img: React
   },
   {
+    name: "NEXT.js",
+    url: "https://nextjs.org/",
+    img: Next
+  },
+  {
     name: "Moralis",
     url: "https://moralis.io/",
     img: Moralis
@@ -95,6 +104,21 @@ export const skills: Skill[] = [
     name: "web3js",
     url: "https://web3js.readthedocs.io/en/v1.7.4/",
     img: Web3
+  },
+  {
+    name: "The Graph",
+    url: "https://thegraph.com/en/",
+    img: Graph
+  },
+  {
+    name: "Arweave",
+    url: "https://www.arweave.org/",
+    img: Arweave
+  },
+  {
+    name: "IPFS",
+    url: "https://ipfs.io/",
+    img: IPFS
   },
   {
     name: "HTML",
