@@ -6,7 +6,7 @@ import Crypto from "./../../images/crypto-tracker.png";
 import Diamond from "./../../images/diamond-hands.png";
 import Coin from "./../../images/coin-flip.png";
 import Mobile from "./../../images/wallet.png";
-
+import Whiteboard from "./../../images/whiteboard-app-preview.png";
 
 export type Project = {
   name: string,
@@ -25,6 +25,14 @@ export const projects: Project[] = [
     url: "https://tijan.dev/",
     github: "https://github.com/0xTijan/portfolio",
     technologies: getSkill(["react", "typescript", "html", "css", "git", "npm"])
+  },
+  {
+    name: "Collaborative Whiteboard",
+    description: "An online collaborative whiteboard app, with private and public rooms for people to chat and draw in real-time. They can also mint NFTs!",
+    image: Whiteboard,
+    url: "",
+    github: "https://github.com/0xTijan/collaborative-canvas",
+    technologies: getSkill(["react", "typescript", "nodejs", "socket.io", "moralis", "solidity"])
   },
   {
     name: "Simple Chat",

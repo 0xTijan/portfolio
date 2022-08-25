@@ -20,6 +20,8 @@ import Next from "./../../images/nextjs-logo.png";
 import IPFS from "./../../images/ipfs-logo.png";
 import Graph from "./../../images/thegraph-logo.png";
 import Arweave from "./../../images/arweave.png";
+import Socket from "./../../images/socket.svg";
+import NodeJS from "./../../images/nodej-js.png";
 
 export type Skill = {
   name: string;
@@ -79,6 +81,16 @@ export const skills: Skill[] = [
     name: "TypeScript",
     url: "https://www.typescriptlang.org/",
     img: TS
+  },
+  {
+    name: "NodeJS",
+    url: "https://nodejs.org/en/",
+    img: NodeJS
+  },
+  {
+    name: "Socket.io",
+    url: "https://socket.io/",
+    img: Socket
   },
   {
     name: "React",
