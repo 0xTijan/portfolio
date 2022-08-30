@@ -1,4 +1,4 @@
-import { getSkill, Skill, skills } from "../skills/config"
+import { getSkill, Skill, skills } from "../skills/config";
 import SimpleChat from "./../../images/simple-chat.png";
 import Portfolio from "./../../images/portfolio.png";
 import Avatar from "./../../images/hardhat-logo.png";
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     name: "Collaborative Whiteboard",
     description: "An online collaborative whiteboard app, with private and public rooms for people to chat and draw in real-time. They can also mint NFTs!",
     image: Whiteboard,
-    url: "",
+    url: "https://projects.tijan.dev/whiteboard",
     github: "https://github.com/0xTijan/collaborative-canvas",
     technologies: getSkill(["react", "typescript", "nodejs", "socket.io", "moralis", "solidity"])
   },
@@ -70,8 +70,8 @@ export const projects: Project[] = [
     name: "Mobile Wallet",
     description: "Shows on-chain stats off user's address. User can add personal contacts for easy assets transfer.",
     image: Mobile,
-    url: "https://github.com/0xTijan/mobile-wallet",
+    url: "",
     github: "https://github.com/0xTijan/mobile-wallet",
     technologies: getSkill(["react native", "javascript", "moralis", "css", "npm"])
   },
-]
+];

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
-import SwiperCore, { Pagination, EffectCoverflow } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { v4 as uuidv4 } from "uuid";
+import SwiperCore, { Pagination, EffectCoverflow } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import block from "./images/bb101-1.png";
 import bit from "./images/bsc.png";
@@ -93,7 +93,7 @@ const Certificates = () => {
       </div>
 
     </div>
-  )
-}
+  );
+};
 
 export default Certificates;
