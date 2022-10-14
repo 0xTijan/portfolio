@@ -1,0 +1,33 @@
+@import url("./../../App.css");
+
+.bg-certificats {
+  background-color: var(--light-bg);
+  height: fit-content;
+  color: var(--text-dark);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+}
+
+.certificates-slideshow {
+  margin-top: 4vh;
+}
+
+.certificate-img {
+  border: 2px solid var(--text-dark); 
+  border-radius: 1rem;
+  width: 25vw;
+}
+
+.slideshow {
+  margin-top: 7.5vh;
+}
+
+@media only screen and (max-width: 950px) {
+  .certificate-img {
+    width: 50vw;
+    border: 1px solid var(--text-dark); 
+    border-radius: 0.5rem;
+  }
+}

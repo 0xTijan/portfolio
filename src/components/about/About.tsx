@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Heading, Text, Button, CloseButton } from '@chakra-ui/react';
-import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin, AiOutlineArrowRight } from "react-icons/ai";
 import { BsTelegram, BsChevronDown } from "react-icons/bs";
-import { FaDiscord  } from "react-icons/fa";
-import avatar from "./../../images/hi.png";
+import avatar from "../../images/avatar.jpg";
 import "./About.css";
 
 
@@ -30,7 +29,7 @@ const About = () => {
     if(isVisible) {
       return(
         <div className="alert">
-          <Heading as="h3" size={getAlertSize()}>💻{"   "}<a href="mailto:contactme@tijan.dev" className="contact-link">Hire Me!</a></Heading>
+          <Heading as="h3" size={getAlertSize()}>{"   "}<a href="mailto:manmit.singh@duke.edu" className="contact-link">Working on ZK STARKs? Let's Talk!</a></Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
         </div>
       )
@@ -50,33 +49,37 @@ const About = () => {
               Hi! 👋
             </Heading>
             <Heading as='h1' fontSize={getFontSize()} size='4xl'>
-              I'm <span className="name">Tijan</span>
+              I'm <span className="name">Manmit</span>
             </Heading>
           </div>
           <div className="about-text-desc">
-            <Text fontSize='3xl'>passionate <span className="name">BLOCKCHAIN DEVELOPER</span> from Slovenia with almost 2 years of experience in blockchain development, enthusiastic about blockchain and web3 industry, looking forward to learn something new every day and contribute to the industry!</Text>
+            <Text fontSize='3xl'>a passionate <span className="name">buidler</span> with a focus on <span className="name">ZK Proofs, ReFi and DeSci</span>. I'm based out of Durham, North Carolina and have now been in the web3 space since 2018. 
+            I'm always eager to meet and learn from other people building the future of the web.</Text>
           </div>
 
           <div className="icons">
-            <a href="https://github.com/0xTijan" target="_blank">
+            <a href="https://github.com/SupremeSingh" target="_blank">
               <AiFillGithub className="icon" />
             </a>
-            <a href="https://twitter.com/0xTijan" target="_blank">
+            <a href="https://twitter.com/man_meat_singh" target="_blank">
               <AiFillTwitterCircle className="icon" />
             </a>
-            <a href="https://t.me/TijanWeb3" target="_blank">
+            <a href="https://www.linkedin.com/in/manmit-singh99/" target="_blank">
+              <AiFillLinkedin className="icon" />
+            </a>
+            <a href="https://t.me/money_singh01" target="_blank">
               <BsTelegram className="icon" />
             </a>
           </div>
 
-          <a href="mailto:contactme@tijan.dev">
+          <a href="mailto:manmit.singh@duke.edu">
             <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid'>
               Contact Me
             </Button>
           </a>
         </div>
         <div className="about-avatar">
-          <img src={avatar} className="avatar" alt="Tijan Bitmoji" />
+          <img src={avatar} className="avatar" alt="Manmit Avatar" />
         </div>
       </div>
       <div className="icon-wrapper">

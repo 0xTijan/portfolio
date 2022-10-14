@@ -19,39 +19,39 @@ export type Contact = {
 export const contacts: Contact[] = [
   {
     name: "EMAIL:",
-    info: "contactme@tijan.dev",
+    info: "manmit.singh@duke.edu",
     icon: <MdOutlineEmail className="contact-icon" />,
-    url: "mailto:contactme@tijan.dev",
+    url: "manmit.singh@duke.edu",
   },
   {
     name: "TWITTER:",
-    info: "@0xTijan",
+    info: "@man_meat_singh",
     icon: <AiFillTwitterCircle className="contact-icon" />,
-    url: "https://twitter.com/0xTijan",
+    url: "https://twitter.com/man_meat_singh",
   },
   {
     name: "TELEGRAM:",
-    info: "@TijanWeb3",
+    info: "@money_singh01",
     icon: <BsTelegram className="contact-icon" />,
-    url: "https://t.me/TijanWeb3",
+    url: "https://t.me/money_singh01",
   },
   {
     name: "DISCORD:",
-    info: "Tijan#6804",
+    info: "money_singh#6494",
     icon: <FaDiscord className="contact-icon" />,
-    url: "https://discord.com/users/775249998379614238",
+    url: "https://discord.com/login",
   },
   {
     name: "GitHub:",
-    info: "@0xTijan",
+    info: "@SupremeSingh",
     icon: <AiFillGithub className="contact-icon" />,
-    url: "https://github.com/0xTijan",
+    url: "https://github.com/SupremeSingh",
   },
   {
     name: "LOCATION & ZONE:",
-    info: "Slovenia, UTC+1",
+    info: "US-East, UTC+5",
     icon: <IoLocationOutline className="contact-icon" />,
-    url: "https://www.timeanddate.com/time/zone/slovenia",
+    url: "https://www.timeanddate.com/time/zone/usa/durham",
   },
 ];
 
@@ -60,7 +60,7 @@ const Contact = () => {
     <div className="bg-contact">
       <div className="contact-header">
         <p className="heading">Contacte Me</p>
-        <p className="text">If you have any questions or want to hire me, please contact me:</p>
+        <p className="text">If you have any questions or want to colab, reach out to me here:</p>
       </div>
 
       <div className="contact-grid">

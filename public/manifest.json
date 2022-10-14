@@ -1,19 +1,19 @@
 {
-  "short_name": "Tijan - Portfolio",
+  "short_name": "Manmit Singh",
   "name": "My Developer Portfolio",
   "icons": [
     {
-      "src": "hi.ico",
+      "src": "mustard.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "hi.png",
+      "src": "mustard.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "hi.png",
+      "src": "mustard.png",
       "type": "image/png",
       "sizes": "512x512"
     }
