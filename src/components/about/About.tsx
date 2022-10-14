@@ -29,7 +29,7 @@ const About = () => {
     if(isVisible) {
       return(
         <div className="alert">
-          <Heading as="h3" size={getAlertSize()}>{"   "}<a href="mailto:manmit.singh@duke.edu" className="contact-link">Working on ZK STARKs? Let's Talk!</a></Heading>
+          <Heading as="h3" size={getAlertSize()}>{"   "}<a href="https://github.com/SupremeSingh/Awesome-ZK" className="contact-link">Working on ZK STARKs? Let's Talk!</a></Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
         </div>
       )

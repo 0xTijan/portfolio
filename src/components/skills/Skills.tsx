@@ -7,8 +7,8 @@ import "./Skills.css";
 const Skills = () => {
   return(
     <div className="bg-skills">
-      <p className="heading">Skillset</p>
-      <p className="text">Technologies I use in my development:</p>
+      <p className="heading">My Projects</p>
+      <p className="text">The things I'm currently working on:</p>
       <div className="skill-icons-gird">
         {skills.map((skill: Skill) => {
           return(
