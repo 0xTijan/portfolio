@@ -8,7 +8,7 @@ const Skills = () => {
   return(
     <div className="bg-skills">
       <p className="heading">My Projects</p>
-      <p className="text">The things I'm currently working on:</p>
+      <p className="text">Milestones in my learning so far:</p>
       <div className="skill-icons-gird">
         {skills.map((skill: Skill) => {
           return(
