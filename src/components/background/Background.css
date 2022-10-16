@@ -1,0 +1,11 @@
+@import url("./../../App.css");
+
+.bg-certificats {
+  background-color: var(--light-bg);
+  height: fit-content;
+  color: var(--text-dark);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}

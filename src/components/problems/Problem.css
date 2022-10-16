@@ -1,0 +1,137 @@
+@import url("./../../App.css");
+
+.bg-projects {
+  background-color: var(--dark-bg);
+  height: fit-content;
+  color: var(--text-white);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 7vh;
+  gap: 3rem;
+}
+
+.tech-tag {
+  margin: 5px;
+}
+
+.project {
+  background-color: var(--grey-bg);
+  border-radius: 1rem;
+  width: fit-content;
+  transition-duration: 0.3s;
+  height: fit-content;
+}
+
+.project:hover {
+  transform: translate(0, -1rem);
+  transition-duration: 0.3s;
+}
+
+.project img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.project-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-tags {
+  margin-top: 2.5vh;
+  margin-bottom: 3vh;
+}
+
+.soon {
+  margin-top: 6vh;
+  text-align: center;
+}
+
+.git-hub-text {
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 7vh;
+  margin-bottom: 2vh;
+}
+
+.git-hub-btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--text-white);
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--text-white);
+  cursor: pointer;
+  display: block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  will-change: transform;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.git-hub-btn:disabled {
+  pointer-events: none;
+}
+
+.git-hub-btn:hover {
+  color: var(--text-dark);
+  background-color: var(--text-white);
+  box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.git-hub-btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .project {
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
