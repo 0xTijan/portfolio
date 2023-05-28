@@ -29,7 +29,10 @@ const About = () => {
     if(isVisible) {
       return(
         <div className="alert">
-          <Heading as="h3" size={getAlertSize()}>💻{"   "}<a href="mailto:contactme@tijan.dev" className="contact-link">Hire Me!</a></Heading>
+          <Heading as="h3" size={getAlertSize()}>
+            💻{"   "}<a href="mailto:contactme@tijan.dev" className="contact-link">Hire Me!</a>
+            <span className="follow-me-link">🐦{"   "}</span><a href="https://twitter.com/0xTijan" className="contact-link">Follow Me!</a>
+          </Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
         </div>
       );
@@ -53,7 +56,7 @@ const About = () => {
               </Heading>
             </div>
             <div className="about-text-desc">
-              <Text fontSize='3xl'>passionate <span className="name">BLOCKCHAIN DEVELOPER</span> from Slovenia with almost 2 years of experience in blockchain development, enthusiastic about blockchain and web3 industry, looking forward to learn something new every day and contribute to the industry!</Text>
+              <Text fontSize='3xl'>skilled <span className="name">BLOCKCHAIN DEVELOPER</span> from Slovenia with +3 years of experience in blockchain development, enthusiastic about blockchain and web3 industry, constantly seeking opportunities for continuous learning and growth.</Text>
             </div>
 
             <div className="icons">

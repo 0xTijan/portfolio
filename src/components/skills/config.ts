@@ -30,16 +30,35 @@ export type Skill = {
 }
 
 export const getSkill = (names: string[]) => {
-  let toReturn: Skill[] = [];
+  const toReturn: Skill[] = [];
   names.map((name: string) => {
-    skills.map((skill: Skill) => {
+    [...skills, ...additionalSkills].map((skill: Skill) => {
       if(skill.name.toLowerCase() === name.toLowerCase()) {
         toReturn.push(skill);
       }
     });
-  })
+  });
   return toReturn;
-}
+};
+
+export const additionalSkills: Skill[] = [
+  {
+    name: "Open-Source Contribution",
+    url: "",
+    img: ""
+  },
+  {
+    name: "Waffle",
+    url: "https://getwaffle.io/",
+    img: Waffle
+  },
+  {
+    name: "Moralis",
+    url: "https://moralis.io/",
+    img: Moralis
+  },
+  
+];
 
 export const skills: Skill[] = [
   {
@@ -51,11 +70,6 @@ export const skills: Skill[] = [
     name: "Hardhat",
     url: "https://hardhat.org/",
     img: Hardhat
-  },
-  {
-    name: "Waffle",
-    url: "https://getwaffle.io/",
-    img: Waffle
   },
   {
     name: "Truffle",
@@ -101,11 +115,6 @@ export const skills: Skill[] = [
     name: "NEXT.js",
     url: "https://nextjs.org/",
     img: Next
-  },
-  {
-    name: "Moralis",
-    url: "https://moralis.io/",
-    img: Moralis
   },
   {
     name: "EthersJS",
@@ -162,4 +171,4 @@ export const skills: Skill[] = [
     url: "https://git-scm.com/",
     img: Git
   },
-]
+];

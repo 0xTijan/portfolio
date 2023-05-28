@@ -119,6 +119,10 @@
   width: 50vw;
 }
 
+.follow-me-link {
+  margin-left: 20px;
+}
+
 
 @media only screen and (max-width: 1250px) {
   .bg {
@@ -145,7 +149,7 @@
   }
 
   .about-text {
-    margin-top: 8vh;
+    margin-top: 6vh;
     padding-bottom: 10vh;
     text-align: center;
   }

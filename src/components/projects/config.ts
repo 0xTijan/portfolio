@@ -1,7 +1,7 @@
 import { getSkill, Skill, skills } from "../skills/config";
 import SimpleChat from "./../../images/simple-chat.png";
 import Portfolio from "./../../images/portfolio.png";
-import Avatar from "./../../images/hardhat-logo.png";
+import Web3UIKit from "./../../images/web3-ui.png";
 import Crypto from "./../../images/crypto-tracker.png";
 import Diamond from "./../../images/diamond-hands.png";
 import Coin from "./../../images/coin-flip.png";
@@ -18,6 +18,14 @@ export type Project = {
 }
 
 export const projects: Project[] = [
+  {
+    name: "Web3UIKit",
+    description: "Open-source contributor to the Web3UIKit - Beautiful and lightweight UI components for web3 developers.",
+    image: Web3UIKit,
+    url: "https://web3uikit.com/",
+    github: "https://github.com/web3ui/web3uikit",
+    technologies: getSkill(["Open-Source Contribution", "react", "typescript", "css"])
+  },
   {
     name: "Portfolio",
     description: "Developer portfolio showing my blockchain projects, skillset and certificates.",
