@@ -28,7 +28,7 @@ export const projects: Project[] = [
   },
   {
     name: "Portfolio",
-    description: "Developer portfolio showing my blockchain projects, skillset and certificates.",
+    description: "Developer portfolio showing my blockchain projects.",
     image: Portfolio,
     url: "https://tijan.dev/",
     github: "https://github.com/0xTijan/portfolio",

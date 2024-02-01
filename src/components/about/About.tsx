@@ -43,20 +43,18 @@ const About = () => {
 
   return(
     <>
-      <Alert />
       <div className="bg">
         <div className="about-wrapper">
           <div className="about-text">
             <div className="about-title">
               <Heading as='h1' fontSize={getFontSize()} size='4xl'>
-                Hi! 👋
-              </Heading>
-              <Heading as='h1' fontSize={getFontSize()} size='4xl'>
-                I&apos;m <span className="name">Tijan</span>
+                Tijan
               </Heading>
             </div>
             <div className="about-text-desc">
-              <Text fontSize='3xl'>skilled <span className="name">BLOCKCHAIN DEVELOPER</span> from Slovenia with +3 years of experience in blockchain development, enthusiastic about blockchain and web3 industry, constantly seeking opportunities for continuous learning and growth.</Text>
+              <Text fontSize='3xl'>
+                <span className="name">BLOCKCHAIN & WEB DEVELOPER</span>
+              </Text>
             </div>
 
             <div className="icons">
@@ -78,7 +76,6 @@ const About = () => {
             </a>
           </div>
           <div className="about-avatar">
-            <img src={avatar} className="avatar" alt="Tijan Bitmoji" />
           </div>
         </div>
         <div className="icon-wrapper">

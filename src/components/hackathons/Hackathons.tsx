@@ -10,7 +10,7 @@ const Hackathons = () => {
   return(
     <div className="bg-hackathons">
       <p className="heading">Hackathons</p>
-      <p className="text">In a little less than a year I have won awards at <b>3</b> blockchain hackathons with just a keyboard and a dream!</p>
+      <p className="text">In a little less than a year I have won awards at <b>3</b> blockchain hackathons</p>
       <div className="hackathons-grid">
         {hackathons.map((hackathon: Hackathon) => {
           return(

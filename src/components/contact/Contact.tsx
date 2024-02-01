@@ -17,12 +17,12 @@ export type Contact = {
 }
 
 export const contacts: Contact[] = [
-  {
+  /*{
     name: "EMAIL:",
     info: "contactme@tijan.dev",
     icon: <MdOutlineEmail className="contact-icon" />,
     url: "mailto:contactme@tijan.dev",
-  },
+  },*/
   {
     name: "TWITTER:",
     info: "@0xTijan",
@@ -47,12 +47,12 @@ export const contacts: Contact[] = [
     icon: <AiFillGithub className="contact-icon" />,
     url: "https://github.com/0xTijan",
   },
-  {
+  /*{
     name: "LOCATION & ZONE:",
     info: "Slovenia, UTC+1",
     icon: <IoLocationOutline className="contact-icon" />,
     url: "https://www.timeanddate.com/time/zone/slovenia",
-  },
+  },*/
 ];
 
 const Contact = () => {
@@ -60,7 +60,7 @@ const Contact = () => {
     <div className="bg-contact">
       <div className="contact-header">
         <p className="heading">Contact Me</p>
-        <p className="text">If you have any questions or want to hire me, please contact me:</p>
+        {/*<p className="text">If you have any questions or want to hire me, please contact me:</p>*/}
       </div>
 
       <div className="contact-grid">
