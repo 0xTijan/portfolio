@@ -13,8 +13,29 @@
 .skill-icons-gird {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin-top: 5vh;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
   gap: 3rem;
+}
+
+.skills-type {
+  margin-top: 8vh;
+}
+
+.skills-type .texts {
+  margin-top: 8vh;
+  margin-left: 2.8rem;
+}
+
+.skills-type .text {
+  font-size: 1.8rem !important;
+  margin-top: -10px !important;
+}
+
+.skills-type .text.skill-description {
+  font-size: 1.6rem !important;
+  margin-top: -5px !important;
+  margin-bottom: 2.5vh;
 }
 
 .skill img {

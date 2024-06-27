@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { Heading, Text, Button, CloseButton } from "@chakra-ui/react";
-import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight, AiOutlineMail } from "react-icons/ai";
 import { BsTelegram, BsChevronDown } from "react-icons/bs";
-import avatar from "./../../images/hi.png";
 import "./About.css";
-
+import { useLanguage } from "../../contexts/LanguageContext";
+import { text } from "../../helpers/text";
 
 const About = () => {
   
   const [isVisible, setIsVisible] = useState<boolean>(true);
+
+  const { language } = useLanguage();
 
   const hide = () => setIsVisible(false);
 
@@ -30,7 +32,7 @@ const About = () => {
       return(
         <div className="alert">
           <Heading as="h3" size={getAlertSize()}>
-            💻{"   "}<a href="mailto:contactme@tijan.dev" className="contact-link">Hire Me!</a>
+            💻{"   "}<a href="mailto:tijan@tijan.dev" className="contact-link">Hire Me!</a>
             <span className="follow-me-link">🐦{"   "}</span><a href="https://twitter.com/0xTijan" className="contact-link">Follow Me!</a>
           </Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
@@ -48,13 +50,14 @@ const About = () => {
           <div className="about-text">
             <div className="about-title">
               <Heading as='h1' fontSize={getFontSize()} size='4xl'>
-                Tijan
+                {text[language].aboutHi}
+              </Heading>
+              <Heading as='h1' fontSize={getFontSize()} size='4xl'>
+                {text[language].aboutIam} <span className="name">Tijan</span>
               </Heading>
             </div>
             <div className="about-text-desc">
-              <Text fontSize='3xl'>
-                <span className="name">BLOCKCHAIN & WEB DEVELOPER</span>
-              </Text>
+              <Text fontSize='3xl'>{text[language].aboutSkilled} <span className="name">BLOCKCHAIN & WEB DEVELOPER</span> {text[language].aboutText}</Text>
             </div>
 
             <div className="icons">
@@ -67,11 +70,14 @@ const About = () => {
               <a href="https://t.me/TijanWeb3" target="_blank" rel="noreferrer">
                 <BsTelegram className="icon" />
               </a>
+              <a href="mailto:tijan@tijan.dev" target="_blank" rel="noreferrer">
+                <AiOutlineMail className="icon" />
+              </a>
             </div>
 
-            <a href="mailto:contactme@tijan.dev">
+            <a href="mailto:tijan@tijan.dev">
               <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid'>
-                Contact Me
+                {text[language].contactButton}
               </Button>
             </a>
           </div>
@@ -80,7 +86,9 @@ const About = () => {
         </div>
         <div className="icon-wrapper">
           <div className="bottom-icon">
-            <BsChevronDown />
+            <a href="#more">
+              <BsChevronDown />
+            </a>
           </div>
         </div>
       </div>

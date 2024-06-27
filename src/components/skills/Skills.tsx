@@ -1,23 +1,40 @@
 import React from "react";
 import { Heading } from "@chakra-ui/react";
-import { skills, Skill } from "./config";
+import { allSkills, Skill, SkillsType } from "./config";
 import { v4 as uuidv4 } from "uuid";
 import "./Skills.css";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { text } from "../../helpers/text";
 
 const Skills = () => {
+
+  const { language } = useLanguage();
+
   return(
-    <div className="bg-skills">
-      <p className="heading">Skillset</p>
-      <p className="text">Technologies I use in my development:</p>
-      <div className="skill-icons-gird">
-        {skills.map((skill: Skill) => {
+    <div className="bg-skills" id="more">
+      <p className="heading">{text[language].skillsetHeading}</p>
+      <p className="text">{text[language].skillsetDescription}</p>
+      <div>
+        {text[language].skills.map((skills: SkillsType) => {
           return(
-            <a key={uuidv4()} href={skill.url} target="_blank" rel="noreferrer">
-              <div className="skill">
-                <img src={skill.img} alt="Skill logo image" />
+            <div key={skills.type} className="skills-type">
+              <div className="texts">
+                <p className="text"><b>{skills.type}</b></p>
+                <p className="text skill-description">{skills.description}</p>
               </div>
-              <p>{skill.name}</p>
-            </a>
+              <div className="skill-icons-gird">
+                {skills.skills.map((skill: Skill) => {
+                  return(
+                    <a key={uuidv4()} href={skill.url} target="_blank" rel="noreferrer">
+                      <div className="skill">
+                        <img src={skill.img} alt="Skill logo image" />
+                      </div>
+                      <p>{skill.name}</p>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
           );
         })}
       </div>

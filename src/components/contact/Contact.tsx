@@ -8,6 +8,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaDiscord } from "react-icons/fa";
 import { v4 as uuidv4 } from "uuid";
 import "./Contact.css";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { text } from "../../helpers/text";
 
 export type Contact = {
   name: string,
@@ -17,12 +19,12 @@ export type Contact = {
 }
 
 export const contacts: Contact[] = [
-  /*{
+  {
     name: "EMAIL:",
-    info: "contactme@tijan.dev",
+    info: "tijan@tijan.dev",
     icon: <MdOutlineEmail className="contact-icon" />,
-    url: "mailto:contactme@tijan.dev",
-  },*/
+    url: "mailto:tijan@tijan.dev",
+  },
   {
     name: "TWITTER:",
     info: "@0xTijan",
@@ -47,19 +49,22 @@ export const contacts: Contact[] = [
     icon: <AiFillGithub className="contact-icon" />,
     url: "https://github.com/0xTijan",
   },
-  /*{
+  {
     name: "LOCATION & ZONE:",
     info: "Slovenia, UTC+1",
     icon: <IoLocationOutline className="contact-icon" />,
     url: "https://www.timeanddate.com/time/zone/slovenia",
-  },*/
+  },
 ];
 
 const Contact = () => {
+
+  const { language } = useLanguage();
+
   return(
     <div className="bg-contact">
       <div className="contact-header">
-        <p className="heading">Contact Me</p>
+        <p className="heading">{text[language].contactHeading}</p>
         {/*<p className="text">If you have any questions or want to hire me, please contact me:</p>*/}
       </div>
 
@@ -80,9 +85,9 @@ const Contact = () => {
       </div>
 
       <div className="button-container">
-        <a href="mailto:contactme@tijan.dev">
+        <a href="mailto:tijan@tijan.dev">
           <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid' className="contact-btn">
-            Contact Me
+            {text[language].contactButton}
           </Button>
         </a>
       </div>

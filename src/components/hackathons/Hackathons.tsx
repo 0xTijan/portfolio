@@ -1,18 +1,21 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Button, HStack, Heading, Text, Tag, Avatar, TagLabel } from "@chakra-ui/react";
-import { hackathons, Hackathon } from "./config";
-import { AiFillGithub } from "react-icons/ai";
-import { Skill } from "../skills/config";
+import { Hackathon } from "./config";
 import "./Hackathons.css";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { text } from "../../helpers/text";
 
 const Hackathons = () => {
+
+  const { language } = useLanguage();
+
   return(
     <div className="bg-hackathons">
-      <p className="heading">Hackathons</p>
-      <p className="text">In a little less than a year I have won awards at <b>3</b> blockchain hackathons</p>
+      <p className="heading">{text[language].hackathonsHeading}</p>
+      <p className="text">{text[language].hackathonsDescription}</p>
       <div className="hackathons-grid">
-        {hackathons.map((hackathon: Hackathon) => {
+        {text[language].hackathons.map((hackathon: Hackathon) => {
           return(
             <div key={uuidv4()} className="hackathon">
               <img src={hackathon.image} alt="Hackathon Image" />
@@ -26,7 +29,7 @@ const Hackathons = () => {
                   {hackathon.description}
                 </Text>
                 <Text fontSize='xl' style={{ marginTop: "3px" }}>
-                  Project: <b>{hackathon.project}</b>
+                  {text[language].hackathonsProjectText} <b>{hackathon.project}</b>
                 </Text>
                 <div className="hackathon-tags">
                   {hackathon.prizes.map((tech: {name: string}) => {
@@ -44,6 +47,9 @@ const Hackathons = () => {
                   })}
                 </div>
                 <HStack>
+                  <a href={hackathon.hackathonUrl} target="_blank" rel="noreferrer">
+                    <Button size='md' colorScheme='blue' variant='solid'>{text[language].hackathonViewHackathon}</Button>
+                  </a>
                   {hackathon.url.length>0 ? (
                     <a href={hackathon.url} target="_blank" rel="noreferrer">
                       <Button size='md' colorScheme='blue' variant='outline'>Demo</Button>

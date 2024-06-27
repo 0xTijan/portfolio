@@ -64,6 +64,11 @@
   margin-bottom: 2vh;
 }
 
+.git-hub-btn.viewMore {
+  margin-top: 8vh;
+  margin-bottom: 6vh;
+}
+
 .git-hub-btn {
   appearance: none;
   background-color: transparent;

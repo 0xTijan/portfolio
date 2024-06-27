@@ -22,6 +22,8 @@ import Graph from "./../../images/thegraph-logo.png";
 import Arweave from "./../../images/arweave.png";
 import Socket from "./../../images/socket.svg";
 import NodeJS from "./../../images/nodej-js.png";
+import Python from "./../../images/python.png";
+import Firebase from "./../../images/firebase.png";
 
 export type Skill = {
   name: string;
@@ -29,10 +31,16 @@ export type Skill = {
   url: string;
 }
 
+export type SkillsType = {
+  type: string;
+  description: string;
+  skills: Skill[];
+}
+
 export const getSkill = (names: string[]) => {
   const toReturn: Skill[] = [];
   names.map((name: string) => {
-    [...skills, ...additionalSkills].map((skill: Skill) => {
+    [...allSkills, ...additionalSkills].map((skill: Skill) => {
       if(skill.name.toLowerCase() === name.toLowerCase()) {
         toReturn.push(skill);
       }
@@ -60,7 +68,7 @@ export const additionalSkills: Skill[] = [
   
 ];
 
-export const skills: Skill[] = [
+export const allSkills: Skill[] = [
   {
     name: "Solidity",
     url: "https://soliditylang.org/",
@@ -95,6 +103,11 @@ export const skills: Skill[] = [
     name: "TypeScript",
     url: "https://www.typescriptlang.org/",
     img: TS
+  },
+  {
+    name: "Python",
+    url: "https://www.python.org/",
+    img: Python
   },
   {
     name: "NodeJS",
@@ -142,6 +155,11 @@ export const skills: Skill[] = [
     img: IPFS
   },
   {
+    name: "Firebase",
+    url: "https://firebase.google.com/",
+    img: Firebase
+  },
+  {
     name: "HTML",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     img: HTML
@@ -170,5 +188,61 @@ export const skills: Skill[] = [
     name: "Git",
     url: "https://git-scm.com/",
     img: Git
+  },
+];
+
+export const skillsEn: SkillsType[] = [
+  {
+    type: "Languages",
+    description: "Programing languages I use:",
+    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "HTML", "CSS", "Python"]),
+  },
+  {
+    type: "Frameworks",
+    description: "Frameworks with which I build my projects:",
+    skills: getSkill(["React", "Next.js", "React Native", "NodeJS", "Firebase", "Chainlink"]),
+  },
+  {
+    type: "Tools",
+    description: "Tools I use during my development:",
+    skills: getSkill(["Truffle", "Ganache", "NPM", "YARN", "Git"]),
+  },
+  {
+    type: "Libraries",
+    description: "Libraries I have frequently used for my projects:",
+    skills: getSkill(["Socket.io", "EthersJS", "web3js"]),
+  },
+  {
+    type: "Data",
+    description: "Projects I use for data in my applications",
+    skills: getSkill(["The Graph", "Arweave", "IPFS"]),
+  },
+];
+
+export const skillsSl: SkillsType[] = [
+  {
+    type: "Jeziki",
+    description: "Programski jeziki, ki jih uporabljam:",
+    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "HTML", "CSS", "Python"]),
+  },
+  {
+    type: "Frameworki",
+    description: "Frameworki s katerimi razvijam projekte:",
+    skills: getSkill(["React", "Next.js", "React Native", "NodeJS", "Firebase", "Chainlink"]),
+  },
+  {
+    type: "Pripomočki",
+    description: "Pripomočki, katere uporabljam med razvijanjem:",
+    skills: getSkill(["Truffle", "Ganache", "NPM", "YARN", "Git"]),
+  },
+  {
+    type: "Knjižnjice",
+    description: "Knjižnjice, ki jih pogosto uporabljam v projektih:",
+    skills: getSkill(["Socket.io", "EthersJS", "web3js"]),
+  },
+  {
+    type: "Podatki",
+    description: "Projekti, katere uporabljam za podatke v svojih projektih:",
+    skills: getSkill(["The Graph", "Arweave", "IPFS"]),
   },
 ];
