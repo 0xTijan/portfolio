@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Heading, Text, Button, CloseButton } from "@chakra-ui/react";
+import React from "react";
+import { Heading, Text, Button } from "@chakra-ui/react";
 import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight, AiOutlineMail } from "react-icons/ai";
 import { BsTelegram, BsChevronDown } from "react-icons/bs";
 import "./About.css";
@@ -8,11 +8,11 @@ import { text } from "../../helpers/text";
 
 const About = () => {
   
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+  // const [isVisible, setIsVisible] = useState<boolean>(true);
 
   const { language } = useLanguage();
 
-  const hide = () => setIsVisible(false);
+  // const hide = () => setIsVisible(false);
 
   const getFontSize = () => {
     const width = window.innerWidth;
@@ -21,7 +21,7 @@ const About = () => {
     return "8rem";
   };
 
-  const getAlertSize = () => {
+  /*const getAlertSize = () => {
     const width = window.innerWidth;
     if(width < 1275) return "md";
     return "lg";
@@ -41,7 +41,7 @@ const About = () => {
     }else{
       return null;
     }
-  };
+  };*/
 
   return(
     <>

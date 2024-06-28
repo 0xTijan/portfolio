@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getSkill, Skill } from "../skills/config";
 import SimpleChat from "./../../images/simple-chat.png";
 import Portfolio from "./../../images/portfolio.png";

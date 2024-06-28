@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "./../../images/react-logo.png";
 import HTML from "./../../images/html5-logo.png";
 import CSS from "./../../images/css-logo.png";

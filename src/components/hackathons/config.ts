@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Filecoin from "./../../images/moralis-filecoin.png";
 import Google from "./../../images/moralis-google.png";
 import Chainlink from "./../../images/chainlink-hackathon.png";

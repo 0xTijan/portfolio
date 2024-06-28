@@ -1,6 +1,5 @@
 import React from "react";
-import { Heading } from "@chakra-ui/react";
-import { allSkills, Skill, SkillsType } from "./config";
+import { Skill, SkillsType } from "./config";
 import { v4 as uuidv4 } from "uuid";
 import "./Skills.css";
 import { useLanguage } from "../../contexts/LanguageContext";

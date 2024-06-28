@@ -1,9 +1,8 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-import { GrLocation } from "react-icons/gr";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
-import { BsTelegram, BsGlobe2 } from "react-icons/bs";
+import { BsTelegram } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaDiscord } from "react-icons/fa";
 import { v4 as uuidv4 } from "uuid";
