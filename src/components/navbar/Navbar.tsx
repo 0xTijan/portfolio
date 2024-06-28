@@ -56,11 +56,11 @@ const Navbar = () => {
           </a>
         </div>
         {language === "en" ? (
-          <a href="/sl">
+          <a href="/?l=sl">
             <img src={Slovenian} className="language" alt="Slovenian" />
           </a>
         ):(
-          <a href="/en">
+          <a href="/?l=en">
             <img src={English} className="language" alt="English" />
           </a>
         )}

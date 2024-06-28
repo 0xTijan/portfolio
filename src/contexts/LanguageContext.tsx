@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-export type Language = "en" | "sl";
+type Language = "en" | "sl";
 
 interface LanguageContextProps {
   language: Language;
@@ -12,27 +12,31 @@ const LanguageContext = createContext<LanguageContextProps | undefined>(undefine
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>("en");
 
-  const updateLanguageFromPath = () => {
-    const path = window.location.pathname.split("/")[1];
-    if (path === "en" || path === "sl") {
-      setLanguage(path as Language);
+  const updateLanguageFromQuery = () => {
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get("l");
+    if (lang === "en" || lang === "sl") {
+      setLanguage(lang as Language);
     } else {
-      window.history.replaceState(null, "", "/en");
+      params.set("l", "en");
+      window.history.replaceState(null, "", "?" + params.toString());
       setLanguage("en");
     }
   };
 
   useEffect(() => {
-    updateLanguageFromPath();
-    window.addEventListener("popstate", updateLanguageFromPath);
+    updateLanguageFromQuery();
+    window.addEventListener("popstate", updateLanguageFromQuery);
 
     return () => {
-      window.removeEventListener("popstate", updateLanguageFromPath);
+      window.removeEventListener("popstate", updateLanguageFromQuery);
     };
   }, []);
 
   const changeLanguage = (newLanguage: Language) => {
-    window.history.pushState(null, "", `/${newLanguage}`);
+    const params = new URLSearchParams(window.location.search);
+    params.set("l", newLanguage);
+    window.history.pushState(null, "", "?" + params.toString());
     setLanguage(newLanguage);
   };
 
