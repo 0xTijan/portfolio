@@ -30,4 +30,5 @@ jobs:
         password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
         protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
         port: ${{ secrets.GIT_CPANEL_REACT_PORT }}
+        timeout: 60000
         local-dir: ./build/
