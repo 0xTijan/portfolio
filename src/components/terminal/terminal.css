@@ -1,0 +1,127 @@
+@import "https://fonts.googleapis.com/css?family=Inconsolata";
+
+.terminal-wrapper {
+  background-color: var(--light-bg);
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.terminal {
+  margin-top: 5vh;
+  color: white;
+  font-family: Inconsolata, sans-serif, Arial, Helvetica;
+  font-size: 18px;
+  line-height: 1.2;
+  background-color: var(--dark-bg);
+  height: auto;
+  border-radius: 18px;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.terminal-btn {
+  margin-top: 32vh;
+  transform: scale(2);
+  position: absolute;
+  left: 45%;
+}
+
+.aboutme {
+  width: 50%;
+  color:rgb(194, 181, 147);
+}
+
+.previousCommands {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#command {
+  width: 100%;
+  background: none;
+  border: 0px;
+  font-family: Inconsolata, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.mcq-wrapper {
+  position: relative;
+}
+
+.mcq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.mcq-option {
+  padding: 1px;
+  cursor: pointer;
+ 
+}
+
+.mcq-option:hover a {
+  background-color: #f2f2f2;
+  color: black;
+  
+}
+
+.mcq-option:hover {
+  background-color: #f2f2f2;
+  color: black;
+  width: 280px;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.commands {
+  display: flex;
+  gap: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+#skipButton {
+  position: absolute;
+  right: 2%;
+  font-style: italic;
+  color: gray;
+}
+
+.console {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.userPrefix {
+  margin-right: 7px;
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+
+  /* CSS rules for mobile devices */
+  #skipButton {
+    font-size: large;
+    position: absolute;
+    bottom: 2%;
+  }
+
+  .terminal {
+    font-size: 16px;
+    height: auto;
+  }
+
+  .aboutme {
+    width: 100%;
+  }
+}

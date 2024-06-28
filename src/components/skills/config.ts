@@ -205,13 +205,13 @@ export const skillsEn: SkillsType[] = [
   {
     type: "Tools",
     description: "Tools I use during my development:",
-    skills: getSkill(["Truffle", "Ganache", "NPM", "YARN", "Git"]),
+    skills: getSkill(["Truffle", "Ganache", "Hardhat", "NPM", "YARN", "Git"]),
   },
-  {
+  /*{
     type: "Libraries",
     description: "Libraries I have frequently used for my projects:",
     skills: getSkill(["Socket.io", "EthersJS", "web3js"]),
-  },
+  },*/
   {
     type: "Data",
     description: "Projects I use for data in my applications",
@@ -233,13 +233,13 @@ export const skillsSl: SkillsType[] = [
   {
     type: "Pripomočki",
     description: "Pripomočki, katere uporabljam med razvijanjem:",
-    skills: getSkill(["Truffle", "Ganache", "NPM", "YARN", "Git"]),
+    skills: getSkill(["Truffle", "Ganache", "Hardhat", "NPM", "YARN", "Git"]),
   },
-  {
+  /*{
     type: "Knjižnjice",
     description: "Knjižnjice, ki jih pogosto uporabljam v projektih:",
     skills: getSkill(["Socket.io", "EthersJS", "web3js"]),
-  },
+  },*/
   {
     type: "Podatki",
     description: "Projekti, katere uporabljam za podatke v svojih projektih:",

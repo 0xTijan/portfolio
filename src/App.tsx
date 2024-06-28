@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Hackathons from "./components/hackathons/Hackathons";
 import Navbar from "./components/navbar/Navbar";
+import Terminal from "./components/terminal/Terminal";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Skills />
       <Hackathons />
       <Projects />
-      {/*<Certificates />*/}
+      <Terminal />
       <Contact />
       <Footer />
     </>

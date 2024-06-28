@@ -36,6 +36,10 @@ export const text = {
 
     // others
     contactButton: "Contact Me",
+
+    // terminal page
+    terminalHeading: "Terminal",
+    terminalDescription: "Use this interactive terminal to find out more about me and my work!"
   },
   "sl": {
     // projects page
@@ -70,5 +74,9 @@ export const text = {
 
     // others
     contactButton: "Kontaktiraj Me",
+    
+    // terminal page
+    terminalHeading: "Terminal",
+    terminalDescription: "Uporabite ta interaktivni terminal, in izvedi več o meni in mojem delu!"
   }
 };
