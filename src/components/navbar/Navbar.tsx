@@ -14,7 +14,7 @@ const Navbar = () => {
   const { language } = useLanguage();
 
   const handleScroll = () => {
-    if (window.scrollY > window.innerHeight*0.22) {
+    if (window.scrollY > window.innerHeight*0.4) {
       setShowNavbar(true);
     } else {
       setShowNavbar(false);
