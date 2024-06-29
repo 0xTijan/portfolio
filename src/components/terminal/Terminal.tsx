@@ -85,68 +85,69 @@ const Terminal: React.FC = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Enter") {
-        if (!Text3.includes("Access")) {
-          let id = setTimeout(() => { }, 0) as unknown as number;
-          while (id--) {
-            clearTimeout(id);
-          }
+    if(start) {
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          if (!Text3.includes("Access")) {
+            let id = setTimeout(() => { }, 0) as unknown as number;
+            while (id--) {
+              clearTimeout(id);
+            }
 
-          id = setInterval(() => { }, 0) as unknown as number;
-          while (id--) {
-            clearInterval(id);
+            id = setInterval(() => { }, 0) as unknown as number;
+            while (id--) {
+              clearInterval(id);
+            }
+            setText1("ssh geust@tijan.dev");
+            setText2("geust@tijan.dev's password:");
+            setText3("Access Granted!");
           }
-          setText1("ssh geust@tijan.dev");
-          setText2("geust@tijan.dev's password:");
-          setText3("Access Granted!");
+          const CommandArea = document.getElementById("command") as HTMLInputElement;
+          if (CommandArea) {
+            previousCommand = CommandArea.value;
+            if(previousCommand.length>0) {
+              setprevusedCommand(prevArray => [...prevArray, "guest@tijan.dev:~$ " + previousCommand]);
+              /*if (CommandArea.value === "github") {
+                window.open("https://github.com/0xTijan", "_blank");
+              }
+              else if (CommandArea.value === "twitter") {
+                window.open("https://tijan.dev", "_blank");
+              }
+              else if (CommandArea.value === "telegram") {
+                window.open("https://github.com/0xTijan/portfolio", "_blank");
+              }
+              else if (CommandArea.value === "discord") {
+                window.open("https://github.com/0xTijan/portfolio", "_blank");
+              }
+              else if (CommandArea.value === "email") {
+                window.open("https://github.com/0xTijan/portfolio", "_blank");
+              }*/
+              CommandArea.value = "";
+            }
+          }
         }
-        const CommandArea = document.getElementById("command") as HTMLInputElement;
-        if (CommandArea) {
-          previousCommand = CommandArea.value;
-          if(previousCommand.length>0) {
-            setprevusedCommand(prevArray => [...prevArray, "guest@tijan.dev:~$ " + previousCommand]);
-            /*if (CommandArea.value === "github") {
-              window.open("https://github.com/0xTijan", "_blank");
-            }
-            else if (CommandArea.value === "twitter") {
-              window.open("https://tijan.dev", "_blank");
-            }
-            else if (CommandArea.value === "telegram") {
-              window.open("https://github.com/0xTijan/portfolio", "_blank");
-            }
-            else if (CommandArea.value === "discord") {
-              window.open("https://github.com/0xTijan/portfolio", "_blank");
-            }
-            else if (CommandArea.value === "email") {
-              window.open("https://github.com/0xTijan/portfolio", "_blank");
-            }*/
-            CommandArea.value = "";
-          }
-        }
-      }
-    });
+      });
 
-    Typewriter({ text: "ssh geust@tijan.dev", delay: 100, func: setText1 });
+      Typewriter({ text: "ssh geust@tijan.dev", delay: 100, func: setText1 });
 
-    setTimeout(() => {
-      setText2("geust@tijan.dev's password:▮");
-    }, 3000);
+      setTimeout(() => {
+        setText2("geust@tijan.dev's password:▮");
+      }, 3000);
 
-    setTimeout(() => {
-      Typewriter({ text: "", delay: 100, func: setText4, Spinner: true, spinTime: 2500 });
-    }, 4300);
+      setTimeout(() => {
+        Typewriter({ text: "", delay: 100, func: setText4, Spinner: true, spinTime: 2500 });
+      }, 4300);
 
-    setTimeout(() => {
-      setText3("Connecting to geust@tijan.dev...");
-    }, 4300);
+      setTimeout(() => {
+        setText3("Connecting to geust@tijan.dev...");
+      }, 4300);
 
-    setTimeout(() => {
-      setText2("geust@tijan.dev's password:");
-      setText3("> Access granted.");
-    }, 7300);
-
-  }, []);
+      setTimeout(() => {
+        setText2("geust@tijan.dev's password:");
+        setText3("> Access granted.");
+      }, 7300);
+    }
+  }, [start]);
 
   return (
     <div className="bg-skills">
