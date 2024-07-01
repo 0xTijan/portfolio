@@ -19,7 +19,6 @@ const Skills = () => {
             <div key={skills.type} className="skills-type">
               <div className="texts">
                 <p className="text"><b>{skills.type}</b></p>
-                <p className="text skill-description">{skills.description}</p>
               </div>
               <div className="skill-icons-gird">
                 {skills.skills.map((skill: Skill) => {

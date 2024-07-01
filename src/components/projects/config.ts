@@ -142,7 +142,7 @@ export const projectsSl: Project[] = [
   {
     name: "BullFolio",
     description: "Sledilnik kripto portfelja, ki uporabnikom omogoča ustvarjanje strategij in opozoril na podlagi tehnične analize in jim omogoča, da nikoli več ne zamudijo premika na trgu.",
-    image: BananaPayV1,
+    image: BullFolio,
     url: "https://bullfolio.tijan.dev/",
     github: "",
     technologies: getSkill(["react", "typescript", "firebase", "css"])
