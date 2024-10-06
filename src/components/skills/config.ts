@@ -25,6 +25,10 @@ import Socket from "./../../images/socket.svg";
 import NodeJS from "./../../images/nodej-js.png";
 import Python from "./../../images/python.png";
 import Firebase from "./../../images/firebase.png";
+import SQL from "./../../images/sql.png";
+import VUE from "./../../images/vue.png";
+import Rust from "./../../images/rust.png";
+
 
 export type Skill = {
   name: string;
@@ -190,18 +194,33 @@ export const allSkills: Skill[] = [
     url: "https://git-scm.com/",
     img: Git
   },
+  {
+    name: "PostgreSQL",
+    url: "https://www.postgresql.org/",
+    img: SQL
+  },
+  {
+    name: "Vue",
+    url: "https://vuejs.org/",
+    img: VUE
+  },
+  {
+    name: "Rust",
+    url: "https://www.rust-lang.org/",
+    img: Rust
+  },
 ];
 
 export const skillsEn: SkillsType[] = [
   {
     type: "Languages",
     description: "Programing languages I use:",
-    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "HTML", "CSS", "Python"]),
+    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "Rust", "HTML", "CSS", "Python"]),
   },
   {
     type: "Frameworks",
     description: "Frameworks with which I build my projects:",
-    skills: getSkill(["React", "Next.js", "React Native", "NodeJS", "Firebase", "Chainlink"]),
+    skills: getSkill(["React", "Next.js", "Vue","React Native", "NodeJS", "Firebase", "Chainlink"]),
   },
   {
     type: "Tools",
@@ -216,7 +235,7 @@ export const skillsEn: SkillsType[] = [
   {
     type: "Data",
     description: "Projects I use for data in my applications",
-    skills: getSkill(["The Graph", "Arweave", "IPFS"]),
+    skills: getSkill(["The Graph", "Arweave", "IPFS", "PostgreSQL"]),
   },
 ];
 
