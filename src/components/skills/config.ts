@@ -243,12 +243,12 @@ export const skillsSl: SkillsType[] = [
   {
     type: "Jeziki",
     description: "Programski jeziki, ki jih uporabljam:",
-    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "HTML", "CSS", "Python"]),
+    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "Rust", "HTML", "CSS", "Python"]),
   },
   {
     type: "Frameworki",
     description: "Frameworki s katerimi razvijam projekte:",
-    skills: getSkill(["React", "Next.js", "React Native", "NodeJS", "Firebase", "Chainlink"]),
+    skills: getSkill(["React", "Next.js", "Vue","React Native", "NodeJS", "Firebase", "Chainlink"]),
   },
   {
     type: "Pripomočki",
@@ -263,6 +263,6 @@ export const skillsSl: SkillsType[] = [
   {
     type: "Podatki",
     description: "Projekti, katere uporabljam za podatke v svojih projektih:",
-    skills: getSkill(["The Graph", "Arweave", "IPFS"]),
+    skills: getSkill(["The Graph", "Arweave", "IPFS", "PostgreSQL"]),
   },
 ];
