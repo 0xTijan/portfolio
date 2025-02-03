@@ -12,7 +12,7 @@ import Cardix from "./../../images/cardix3.png";
 import BullFolio from "./../../images/bullfolio.png";
 import BananaPayV1 from "./../../images/bananapay.png";
 import BananaPay from "./../../images/bananapay-new.png";
-
+import TicTacToe from "./../../images/tictactoe.png";
 
 export type Project = {
   name: string,
@@ -70,7 +70,15 @@ export const projectsEn: Project[] = [
     image: Whiteboard,
     url: "https://projects.tijan.dev/whiteboard",
     github: "https://github.com/0xTijan/collaborative-canvas",
-    technologies: getSkill(["react", "typescript", "nodejs", "socket.io", "moralis", "solidity"])
+    technologies: getSkill(["react", "typescript", "nodejs", "socket.io" , "solidity"])
+  },
+  {
+    name: "Tic Tac Toe AI",
+    description: "A command-line Tic Tac Toe AI game built with Rust. Multiple game modes, including AI algorithms like Minimax and Monte Carlo Tree Search (MCTS).",
+    image: TicTacToe,
+    url: "https://github.com/0xTijan/tic-tac-toe-ai",
+    github: "https://github.com/0xTijan/tic-tac-toe-ai",
+    technologies: getSkill(["rust"])
   },
   {
     name: "Token-Gated Chat",
@@ -78,7 +86,7 @@ export const projectsEn: Project[] = [
     image: SimpleChat,
     url: "https://projects.tijan.dev/simple-chat",
     github: "https://github.com/0xTijan/simple-crypto-chat",
-    technologies: getSkill(["html", "css", "javascript", "moralis"])
+    technologies: getSkill(["html", "css", "javascript"])
   },
   {
     name: "Coin Flip",
@@ -86,7 +94,7 @@ export const projectsEn: Project[] = [
     image: Coin,
     url: "https://projects.tijan.dev/coin-flip",
     github: "https://github.com/0xTijan/coin-flip",
-    technologies: getSkill(["react", "solidity", "hardhat", "typescript", "chainlink", "moralis"])
+    technologies: getSkill(["react", "solidity", "hardhat", "typescript", "chainlink" ])
   },
   {
     name: "Diamond Hands",
@@ -94,7 +102,7 @@ export const projectsEn: Project[] = [
     image: Diamond,
     url: "https://projects.tijan.dev/diamond-hands",
     github: "https://github.com/0xTijan/diamond-hands",
-    technologies: getSkill(["solidity", "hardhat", "react", "javascript", "moralis"])
+    technologies: getSkill(["solidity", "hardhat", "react", "javascript" ])
   },
   {
     name: "Crypto Tracker",
@@ -102,7 +110,7 @@ export const projectsEn: Project[] = [
     image: Crypto,
     url: "https://projects.tijan.dev/crypto-tracker",
     github: "https://github.com/0xTijan/crypto-tracker",
-    technologies: getSkill(["react", "javascript", "moralis", "css", "html", "git", "npm"])
+    technologies: getSkill(["react", "javascript" , "css", "html", "git", "npm"])
   },
   {
     name: "Mobile Wallet",
@@ -110,7 +118,7 @@ export const projectsEn: Project[] = [
     image: Mobile,
     url: "",
     github: "https://github.com/0xTijan/mobile-wallet",
-    technologies: getSkill(["react native", "javascript", "moralis", "css", "npm"])
+    technologies: getSkill(["react native", "javascript" , "css", "npm"])
   },
   {
     name: "BananaPay V1",
@@ -169,7 +177,15 @@ export const projectsSl: Project[] = [
     image: Whiteboard,
     url: "https://projects.tijan.dev/whiteboard",
     github: "https://github.com/0xTijan/collaborative-canvas",
-    technologies: getSkill(["react", "typescript", "nodejs", "socket.io", "moralis", "solidity"])
+    technologies: getSkill(["react", "typescript", "nodejs", "socket.io" , "solidity"])
+  },
+  {
+    name: "Križci in krožci AI",
+    description: "Igra križci in krožci AI v terminalu, zgrajena z Rustom. Več načinov igre, vključno z algoritmi AI, kot sta Minimax in Monte Carlo Tree Search (MCTS).",
+    image: TicTacToe,
+    url: "https://github.com/0xTijan/tic-tac-toe-ai",
+    github: "https://github.com/0xTijan/tic-tac-toe-ai",
+    technologies: getSkill(["rust"])
   },
   {
     name: "Token-Gated Klepet",
@@ -177,7 +193,7 @@ export const projectsSl: Project[] = [
     image: SimpleChat,
     url: "https://projects.tijan.dev/simple-chat",
     github: "https://github.com/0xTijan/simple-crypto-chat",
-    technologies: getSkill(["html", "css", "javascript", "moralis"])
+    technologies: getSkill(["html", "css", "javascript" ])
   },
   {
     name: "Met Kovanca",
@@ -185,7 +201,7 @@ export const projectsSl: Project[] = [
     image: Coin,
     url: "https://projects.tijan.dev/coin-flip",
     github: "https://github.com/0xTijan/coin-flip",
-    technologies: getSkill(["react", "solidity", "hardhat", "typescript", "chainlink", "moralis"])
+    technologies: getSkill(["react", "solidity", "hardhat", "typescript", "chainlink" ])
   },
   {
     name: "Diamond Hands",
@@ -193,7 +209,7 @@ export const projectsSl: Project[] = [
     image: Diamond,
     url: "https://projects.tijan.dev/diamond-hands",
     github: "https://github.com/0xTijan/diamond-hands",
-    technologies: getSkill(["solidity", "hardhat", "react", "javascript", "moralis"])
+    technologies: getSkill(["solidity", "hardhat", "react", "javascript" ])
   },
   {
     name: "Crypto Sledilnik",
@@ -201,7 +217,7 @@ export const projectsSl: Project[] = [
     image: Crypto,
     url: "https://projects.tijan.dev/crypto-tracker",
     github: "https://github.com/0xTijan/crypto-tracker",
-    technologies: getSkill(["react", "javascript", "moralis", "css", "html", "git", "npm"])
+    technologies: getSkill(["react", "javascript" , "css", "html", "git", "npm"])
   },
   {
     name: "Mobilna Denarnica",
@@ -209,7 +225,7 @@ export const projectsSl: Project[] = [
     image: Mobile,
     url: "",
     github: "https://github.com/0xTijan/mobile-wallet",
-    technologies: getSkill(["react native", "javascript", "moralis", "css", "npm"])
+    technologies: getSkill(["react native", "javascript" , "css", "npm"])
   },
   {
     name: "BananaPay V1",

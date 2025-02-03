@@ -28,6 +28,9 @@ import Firebase from "./../../images/firebase.png";
 import SQL from "./../../images/sql.png";
 import VUE from "./../../images/vue.png";
 import Rust from "./../../images/rust.png";
+import Solana from "./../../images/solana.png";
+import Ethereum from "./../../images/eth.png";
+
 
 
 export type Skill = {
@@ -195,7 +198,7 @@ export const allSkills: Skill[] = [
     img: Git
   },
   {
-    name: "PostgreSQL",
+    name: "SQL",
     url: "https://www.postgresql.org/",
     img: SQL
   },
@@ -209,60 +212,70 @@ export const allSkills: Skill[] = [
     url: "https://www.rust-lang.org/",
     img: Rust
   },
+  {
+    name: "Solana",
+    url: "https://solana.com/",
+    img: Solana
+  },
+  {
+    name: "Ethereum",
+    url: "https://ethereum.org/en/",
+    img: Ethereum
+  },
 ];
 
 export const skillsEn: SkillsType[] = [
   {
     type: "Languages",
     description: "Programing languages I use:",
-    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "Rust", "HTML", "CSS", "Python"]),
+    skills: getSkill(["Solidity", "TypeScript", "Rust", "JavaScript", "SQL", "Python", "HTML", "CSS"]),
   },
   {
     type: "Frameworks",
     description: "Frameworks with which I build my projects:",
-    skills: getSkill(["React", "Next.js", "Vue","React Native", "NodeJS", "Firebase", "Chainlink"]),
+    skills: getSkill(["React", "Next.js", "Vue", "NodeJS", "Firebase"]),
   },
   {
     type: "Tools",
     description: "Tools I use during my development:",
-    skills: getSkill(["Truffle", "Ganache", "Hardhat", "NPM", "YARN", "Git"]),
+    skills: getSkill(["Solana", "Ethereum", "Git", "Hardhat", "Chainlink", "Truffle", "Ganache"]),
   },
   /*{
     type: "Libraries",
     description: "Libraries I have frequently used for my projects:",
     skills: getSkill(["Socket.io", "EthersJS", "web3js"]),
   },*/
-  {
+  /*{
     type: "Data",
     description: "Projects I use for data in my applications",
     skills: getSkill(["The Graph", "Arweave", "IPFS", "PostgreSQL"]),
-  },
+  },*/
 ];
 
 export const skillsSl: SkillsType[] = [
   {
     type: "Jeziki",
     description: "Programski jeziki, ki jih uporabljam:",
-    skills: getSkill(["Solidity", "TypeScript", "JavaScript", "Rust", "HTML", "CSS", "Python"]),
+    skills: getSkill(["Solidity", "TypeScript", "Rust", "JavaScript", "SQL", "Python", "HTML", "CSS"]),
   },
   {
     type: "Frameworki",
     description: "Frameworki s katerimi razvijam projekte:",
-    skills: getSkill(["React", "Next.js", "Vue","React Native", "NodeJS", "Firebase", "Chainlink"]),
+    skills: getSkill(["React", "Next.js", "Vue", "NodeJS", "Firebase"]),
   },
   {
     type: "Pripomočki",
     description: "Pripomočki, katere uporabljam med razvijanjem:",
-    skills: getSkill(["Truffle", "Ganache", "Hardhat", "NPM", "YARN", "Git"]),
+    skills: getSkill(["Solana", "Ethereum", "Git", "Hardhat", "Chainlink", "Truffle", "Ganache"]),
   },
   /*{
     type: "Knjižnjice",
     description: "Knjižnjice, ki jih pogosto uporabljam v projektih:",
     skills: getSkill(["Socket.io", "EthersJS", "web3js"]),
-  },*/
+  },
   {
     type: "Podatki",
     description: "Projekti, katere uporabljam za podatke v svojih projektih:",
     skills: getSkill(["The Graph", "Arweave", "IPFS", "PostgreSQL"]),
-  },
+  },*/
 ];
