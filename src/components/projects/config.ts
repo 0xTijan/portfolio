@@ -13,6 +13,8 @@ import BullFolio from "./../../images/bullfolio.png";
 import BananaPayV1 from "./../../images/bananapay.png";
 import BananaPay from "./../../images/bananapay-new.png";
 import TicTacToe from "./../../images/tictactoe.png";
+import TerminalGame from "./../../images/2048.png";
+
 
 export type Project = {
   name: string,
@@ -49,6 +51,14 @@ export const projectsEn: Project[] = [
     technologies: getSkill(["react", "typescript", "firebase", "css"])
   },
   {
+    name: "Tic Tac Toe AI",
+    description: "A command-line Tic Tac Toe AI game built with Rust. Multiple game modes, including AI algorithms like Minimax and Monte Carlo Tree Search (MCTS).",
+    image: TicTacToe,
+    url: "https://github.com/0xTijan/tic-tac-toe-ai",
+    github: "https://github.com/0xTijan/tic-tac-toe-ai",
+    technologies: getSkill(["rust"])
+  },
+  {
     name: "Web3UIKit",
     description: "Open-source contributor to the Web3UIKit - Beautiful and lightweight UI components for web3 developers.",
     image: Web3UIKit,
@@ -73,12 +83,12 @@ export const projectsEn: Project[] = [
     technologies: getSkill(["react", "typescript", "nodejs", "socket.io" , "solidity"])
   },
   {
-    name: "Tic Tac Toe AI",
-    description: "A command-line Tic Tac Toe AI game built with Rust. Multiple game modes, including AI algorithms like Minimax and Monte Carlo Tree Search (MCTS).",
-    image: TicTacToe,
-    url: "https://github.com/0xTijan/tic-tac-toe-ai",
-    github: "https://github.com/0xTijan/tic-tac-toe-ai",
-    technologies: getSkill(["rust"])
+    name: "Terminal 2048",
+    description: "A terminal-based implementation of the popular 2048 game, written in Rust. Playable on different grid sizes - difficulties.",
+    image: TerminalGame,
+    url: "https://github.com/0xtijan/terminal-2048",
+    github: "https://github.com/0xtijan/terminal-2048",
+    technologies: getSkill(["rust"]),
   },
   {
     name: "Token-Gated Chat",
@@ -156,6 +166,14 @@ export const projectsSl: Project[] = [
     technologies: getSkill(["react", "typescript", "firebase", "css"])
   },
   {
+    name: "Križci in krožci AI",
+    description: "Igra križci in krožci AI v terminalu, zgrajena z Rustom. Več načinov igre, vključno z algoritmi AI, kot sta Minimax in Monte Carlo Tree Search (MCTS).",
+    image: TicTacToe,
+    url: "https://github.com/0xTijan/tic-tac-toe-ai",
+    github: "https://github.com/0xTijan/tic-tac-toe-ai",
+    technologies: getSkill(["rust"])
+  },
+  {
     name: "Web3UIKit",
     description: "Odprtokodni sodelavec za Web3UIKit – čudovite in lahke komponente uporabniškega vmesnika za razvijalce web3 aplikacij.",
     image: Web3UIKit,
@@ -180,12 +198,12 @@ export const projectsSl: Project[] = [
     technologies: getSkill(["react", "typescript", "nodejs", "socket.io" , "solidity"])
   },
   {
-    name: "Križci in krožci AI",
-    description: "Igra križci in krožci AI v terminalu, zgrajena z Rustom. Več načinov igre, vključno z algoritmi AI, kot sta Minimax in Monte Carlo Tree Search (MCTS).",
-    image: TicTacToe,
-    url: "https://github.com/0xTijan/tic-tac-toe-ai",
-    github: "https://github.com/0xTijan/tic-tac-toe-ai",
-    technologies: getSkill(["rust"])
+    name: "Terminal 2048",
+    description: "Izvedba priljubljene igre 2048 v terminalu, napisana v Rustu. Igranje na različnih velikostih mreže - težavnosti.",
+    image: TerminalGame,
+    url: "https://github.com/0xtijan/terminal-2048",
+    github: "https://github.com/0xtijan/terminal-2048",
+    technologies: getSkill(["rust"]),
   },
   {
     name: "Token-Gated Klepet",

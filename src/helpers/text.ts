@@ -32,7 +32,7 @@ export const text = {
     aboutHi: "Hi! 👋",
     aboutIam: "I'am ",
     aboutSkilled: "skilled",
-    aboutText: "from Slovenia with +3 years of experience in blockchain development, enthusiastic about blockchain and web3 industry, constantly seeking opportunities for continuous learning and growth.",
+    aboutText: "from Slovenia with +3 years of experience in blockchain and web development.",
 
     // others
     contactButton: "Contact Me",
@@ -70,7 +70,7 @@ export const text = {
     aboutHi: "Živjo! 👋",
     aboutIam: "Sem ",
     aboutSkilled: "izkušen",
-    aboutText: "iz Slovenije s +3 leti izkušenj na področju razvoja blockchain tehnologij, navdušen nad blockchain in web3 industrijo, vedno iščem priložnosti za učenje in spoznavanje novih tehnologij.",
+    aboutText: "iz Slovenije s +3 leti izkušenj na področju razvoja blockchain in spletnih tehnologij.",
 
     // others
     contactButton: "Kontaktiraj Me",

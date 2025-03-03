@@ -30,7 +30,7 @@ import VUE from "./../../images/vue.png";
 import Rust from "./../../images/rust.png";
 import Solana from "./../../images/solana.png";
 import Ethereum from "./../../images/eth.png";
-
+import Tauri from "./../../images/tauri.png";
 
 
 export type Skill = {
@@ -222,6 +222,11 @@ export const allSkills: Skill[] = [
     url: "https://ethereum.org/en/",
     img: Ethereum
   },
+  {
+    name: "Tauri",
+    url: "https://v2.tauri.app/",
+    img: Tauri
+  }
 ];
 
 export const skillsEn: SkillsType[] = [
@@ -233,7 +238,7 @@ export const skillsEn: SkillsType[] = [
   {
     type: "Frameworks",
     description: "Frameworks with which I build my projects:",
-    skills: getSkill(["React", "Next.js", "Vue", "NodeJS", "Firebase"]),
+    skills: getSkill(["React", "Next.js", "Vue", "NodeJS", "Firebase", "Tauri"]),
   },
   {
     type: "Tools",
@@ -261,7 +266,7 @@ export const skillsSl: SkillsType[] = [
   {
     type: "Frameworki",
     description: "Frameworki s katerimi razvijam projekte:",
-    skills: getSkill(["React", "Next.js", "Vue", "NodeJS", "Firebase"]),
+    skills: getSkill(["React", "Next.js", "Vue", "NodeJS", "Firebase", "Tauri"]),
   },
   {
     type: "Pripomočki",

@@ -49,11 +49,11 @@ const About = () => {
         <div className="about-wrapper">
           <div className="about-text">
             <div className="about-title">
-              <Heading as='h1' fontSize={getFontSize()} size='4xl'>
+              {/*<Heading as='h1' fontSize={getFontSize()} size='4xl'>
                 {text[language].aboutHi}
-              </Heading>
+              </Heading>*/}
               <Heading as='h1' fontSize={getFontSize()} size='4xl'>
-                {text[language].aboutIam} <span className="name">Tijan</span>
+                <span className="name">👋  Tijan</span>
               </Heading>
             </div>
             <div className="about-text-desc">
